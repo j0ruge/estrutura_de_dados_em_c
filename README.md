@@ -19,6 +19,8 @@ Formula genérica para cálculo de posição na memória de um elemento qualquer
 $${Pos_n= enderecoInicial + ( (n - 1) * tamanhoDoTipoDoElemento) }$$
 
 ```
+\* Algoritmo 1.1: Cálculo da posição de índices de um vetor na memória *\
+
 begin
  | Endereço Elemento 1 <-- endereço inicial 
  | Endereço Elemento 2 <-- endereço inicial + (1 * tamanho Elemento)
@@ -51,11 +53,13 @@ Onde:
 
 
 ```
+\* Algoritmo 1.2: Cálculo da posição de índices de uma matriz na memória *\
+
 begin
- | Endereço Elemento 1 <-- endereço inicial 
- | Endereço Elemento 2 <-- endereço inicial + (1 * tamanho Elemento)
- | Endereço Elemento 1 <-- endereço inicial + (2 * tamanho Elemento)
- | Endereço Elemento 1 <-- endereço inicial + (3 * tamanho Elemento)
+ | M00 <-- endereço Inicial 
+ | M01 <-- endereço Inicial + (1 * tamanho Elemento)
+ | M10 <-- endereço Inicial + (i * C * tamanho Elemento)
+ | M11 <-- endereço Inicial + (i * C * tamanho Elemento) + (j * tamanho Elemento)
 end
 ```
 
