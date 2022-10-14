@@ -13,7 +13,7 @@ Algumas características do tipo vetor([10]):
 	+ Posição de memória não liberada
 
 
-### Fórmula genérica do vetor
+### Fórmula genérica para cálculo de posição na memória de um elemento qualquer
 
 $${Pos_n= enderecoInicial + ( (n - 1) * tamanhoDoTipoDoElemento) }$$
 
