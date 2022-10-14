@@ -103,8 +103,8 @@ O operador * tem como signiicado ***no endereço de***.<br>
 
 Por exemplo:<br>
 
-```m = &count;``` *põe o endereço na memória da variável count em m*.<br>
-```q = *m;``` coloca o valor de count em q.<br>
+```m = &count;``` *põe o endereço na memória da variável count em **m** *.<br>
+```q = *m;``` *coloca o valor de count em **q** *.<br>
 
 
 ----
