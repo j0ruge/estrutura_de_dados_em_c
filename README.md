@@ -106,6 +106,10 @@ Por exemplo:<br>
 ```m = &count;``` *põe o endereço na memória da variável count em **m** *.<br>
 ```q = *m;``` *coloca o valor de count em **q** *.<br>
 
+> **Warning**
+>
+>Cuide-se para não confundir o operador de ponteiros (*) como multiplicação na utilização de ponteiros e vice-versa.
+
 
 ----
 ## Referências
