@@ -44,6 +44,12 @@ Formula genérica para cálculo de posição na memória de um elemento qualquer
 
 $${Pos_ij= enderecoInicial + ((i-1) * C * tamanhoDoTipoDoElemento) + ((j-1) * tamanhoDoTipoDoElemento)}$$
 
+Onde: 
+* $$C$$ a quantidade de colunas por linhas, 
+* i o número da linha e 
+* j a posição do elemento dentro linha
+
+
 ```
 begin
  | Endereço Elemento 1 <-- endereço inicial 
