@@ -12,3 +12,6 @@ Algumas características do tipo vetor([10]):
 
 ### Fórmula genérica do vetor
 Pos_n = endereço Inicial + ( (n - 1) * tamanho do tipo do elemento)
+
+
+![](https://latex.codecogs.com/svg.image?\bg{white}{Pos_n})
