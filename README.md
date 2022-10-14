@@ -39,6 +39,20 @@ tipo_do_dado nome_do_vetor[ tamanho_do_vetor ]
 
 A matriz é um arranjo bidimensional ou multidimensional homogêneo de alocação estática e seqüencial.
 
+### Fórmula 
+Formula genérica para cálculo de posição na memória de um elemento qualquer
+
+$${Pos_ij= enderecoInicial + ((i-1) * C * tamanhoDoTipoDoElemento) + ((j-1) * tamanhoDoTipoDoElemento)}$$
+
+```
+begin
+ | Endereço Elemento 1 <-- endereço inicial 
+ | Endereço Elemento 2 <-- endereço inicial + (1 * tamanho Elemento)
+ | Endereço Elemento 1 <-- endereço inicial + (2 * tamanho Elemento)
+ | Endereço Elemento 1 <-- endereço inicial + (3 * tamanho Elemento)
+end
+```
+
 
 
 ## Referências
