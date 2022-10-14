@@ -31,12 +31,13 @@ end
 
 ### Definição
 
-A Definição de um vetor em C se dá pela sintaxe:
+A definição de um vetor em C se dá pela sintaxe:
 
 ```
 tipo_do_dado nome_do_vetor[ tamanho_do_vetor ]
 ```
 
+----
 ## Matriz
 
 A matriz é um arranjo bidimensional ou multidimensional homogêneo de alocação estática e seqüencial.
@@ -63,7 +64,15 @@ begin
 end
 ```
 
+### Definição
+
+A definição de uma matriz em C se dá pela sintaxe:
+
+```
+tipo_do_dado nome_da_matriz[ quantidade_linhas ] [ quantidade_colunas ]
+```
 
 
+----
 ## Referências
 [LaTeX Equation Editor](https://www.codecogs.com/latex/eqneditor.php)
