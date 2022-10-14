@@ -66,12 +66,17 @@ end
 
 ### Definição
 
-A definição de uma matriz em C se dá pela sintaxe:
+A definição de uma matriz bidimencional em C se dá pela sintaxe:
 
 ```
 tipo_do_dado nome_da_matriz[ quantidade_linhas ] [ quantidade_colunas ]
 ```
 
+A definição de uma matriz de várias dimensões em C se dá pela sintaxe:
+
+```
+tipo_do_dado nome_da_matriz[tamanho_dimensão_1] [tamanho_dimensão_2] [tamanho_dimensão_3] ... [tamanho_dimensão_n]
+```
 
 ----
 ## Referências
