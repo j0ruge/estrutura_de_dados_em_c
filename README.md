@@ -78,6 +78,11 @@ A definição de uma matriz de várias dimensões em C se dá pela sintaxe:
 tipo_do_dado nome_da_matriz[tamanho_dimensão_1] [tamanho_dimensão_2] [tamanho_dimensão_3] ... [tamanho_dimensão_n]
 ```
 
+> **Note**
+> Uma regra que se pode sempre levar em consideração:
+> para cada dimensão de uma matriz, sempre haverá um laço (normalmente um for). Se houver duas dimensões, então haverá dois laços.
+
+
 ----
 ## Referências
 [LaTeX Equation Editor](https://www.codecogs.com/latex/eqneditor.php)
