@@ -10,7 +10,7 @@ Algumas características do tipo vetor([10]):
 	+ Realocação dos elementos
 	+ Posição de memória não liberada
 
-**Fórmula genérica do vetor
+** Fórmula genérica do vetor
 
 $${Pos_n= enderecoInicial + ( (n - 1) * tamanhoDoTipoDoElemento) }$$
 
