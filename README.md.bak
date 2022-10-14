@@ -10,11 +10,9 @@ Algumas características do tipo vetor([10]):
 	+ Realocação dos elementos
 	+ Posição de memória não liberada
 
-### Fórmula genérica do vetor
+**Fórmula genérica do vetor
 
-![](https://latex.codecogs.com/svg.image?\inline&space;\bg{white}{Pos_n=&space;enderecoInicial&space;&plus;&space;(&space;(n&space;-&space;1)&space;*&space;tamanhoDoTipoDoElemento)})
-
-
+$$\left({Pos_n= enderecoInicial + ( (n - 1) * tamanhoDoTipoDoElemento)})$$
 
 
 **The Cauchy-Schwarz Inequality**
