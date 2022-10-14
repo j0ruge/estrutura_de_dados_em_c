@@ -84,6 +84,14 @@ tipo_do_dado nome_da_matriz[tamanho_dimensão_1] [tamanho_dimensão_2] [tamanho_
 > Se houver duas dimensões, então haverá dois laços.
 > Se houver quatro dimensões, então haverá quatro laços e assim até **n** dimensões. 
 
+----
+## Ponteiros
+
+O ponteiro é um tipo
+de dado como int, char ou loat. A diferença do ponteiro em relação aos outros tipos de dados é que uma variável que seja ponteiro guardará um endereço de memória [ , ].
+Por meio deste endereço pode-se acessar a informação, dizendo que a variável ponteiro aponta para uma posição de memória. O maior problema em relação ao ponteiro é entender quando se está trabalhando com o seu valor, ou seja, o endereço, e quando se está trabalhando com a informação apontada por ele.
+
+
 
 ----
 ## Referências
