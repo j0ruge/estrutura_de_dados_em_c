@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1665544488 source:i:\meu drive\pessoal\backup\pc_casa\documents\uva\estrutura de dados 1\estudos\01_apresentacao\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+

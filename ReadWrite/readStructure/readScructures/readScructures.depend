@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1665628171 source:i:\meu drive\pessoal\backup\pc_casa\documents\uva\estrutura de dados 1\estudos\readwrite\readstructure\readscructures\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

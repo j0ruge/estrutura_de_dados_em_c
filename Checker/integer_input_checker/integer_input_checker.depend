@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1665589234 source:i:\meu drive\pessoal\backup\pc_casa\documents\uva\estrutura de dados 1\estudos\checker\integer_input_checker\main.c
+	<stdlib.h>
+	<stdio.h>
+	"validation.h"
+
+1665593140 i:\meu drive\pessoal\backup\pc_casa\documents\uva\estrutura de dados 1\estudos\checker\integer_input_checker\validation.h
+	<stdbool.h>
+	<string.h>
+	<ctype.h>
+
+1665593216 source:i:\meu drive\pessoal\backup\pc_casa\documents\uva\estrutura de dados 1\estudos\checker\integer_input_checker\validation.c
+	"validation.h"
+
