@@ -31,7 +31,9 @@ end
 
 A Definição de um vetor em C se dá pela sintaxe:
 
+```
 tipo_do_dado nome_do_vetor[ tamanho_do_vetor ]
+```
 
 
 ## Referências
