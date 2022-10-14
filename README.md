@@ -13,3 +13,11 @@ Algumas características do tipo vetor([10]):
 ### Fórmula genérica do vetor
 
 ![](https://latex.codecogs.com/svg.image?\bg{white}{Pos_n=&space;enderecoInicial&space;&plus;&space;(&space;(n&space;-&space;1)&space;*&space;tamanhoDoTipoDoElemento)})
+
+
+
+
+
+
+## Referências
+[LaTeX Equation Editor](https://www.codecogs.com/latex/eqneditor.php)

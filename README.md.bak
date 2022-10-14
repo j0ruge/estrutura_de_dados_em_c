@@ -11,7 +11,5 @@ Algumas características do tipo vetor([10]):
 	+ Posição de memória não liberada
 
 ### Fórmula genérica do vetor
-Pos_n = endereço Inicial + ( (n - 1) * tamanho do tipo do elemento)
 
-
-![](https://latex.codecogs.com/svg.image?\bg{white}{Pos_n})
+![](https://latex.codecogs.com/svg.image?\bg{white}{Pos_n=&space;enderecoInicial&space;&plus;&space;(&space;(n&space;-&space;1)&space;*&space;tamanhoDoTipoDoElemento)})
