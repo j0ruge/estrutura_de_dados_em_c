@@ -97,7 +97,7 @@ O maior problema em relação ao ponteiro é entender quando se está trabalhand
 
 Ele é um operador unário que devolve o endereço na memória de seu operando. O operador & tem como significado o **endereço de**.<br>
 
-O ***** é um operador unário que devolve o valor da variável localizada no endereço que o segue
+O * é um operador unário que devolve o valor da variável localizada no endereço que o segue.
 
 
 
