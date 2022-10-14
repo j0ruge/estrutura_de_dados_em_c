@@ -13,7 +13,8 @@ Algumas características do tipo vetor([10]):
 	+ Posição de memória não liberada
 
 
-### Fórmula genérica para cálculo de posição na memória de um elemento qualquer
+### Fórmula 
+Formula genérica para cálculo de posição na memória de um elemento qualquer
 
 $${Pos_n= enderecoInicial + ( (n - 1) * tamanhoDoTipoDoElemento) }$$
 
@@ -26,7 +27,9 @@ begin
 end
 ```
 
-### A definição de um vetor em C se dá pela sintaxe:
+### Definição
+
+A Definição de um vetor em C se dá pela sintaxe:
 
 tipo_do_dado nome_do_vetor[ tamanho_do_vetor ]
 
