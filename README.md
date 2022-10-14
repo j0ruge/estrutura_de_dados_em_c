@@ -15,6 +15,7 @@ Algumas características do tipo vetor([10]):
 ![](https://latex.codecogs.com/svg.image?\inline&space;\bg{white}{Pos_n=&space;enderecoInicial&space;&plus;&space;(&space;(n&space;-&space;1)&space;*&space;tamanhoDoTipoDoElemento)})
 
 
+$${Pos_n}$$
 
 
 **The Cauchy-Schwarz Inequality**
