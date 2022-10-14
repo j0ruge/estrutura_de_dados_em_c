@@ -2,26 +2,14 @@
 #include <stdlib.h>
 
  /*
- * Estrutura de Dados com Algoritmos e C, PDF pág 36
- * Programa 1.5: Exemplo de uso de ponteiros.
+ * Estrutura de Dados com Algoritmos e C, PDF pág XX
+ * Programa ....
  */
 
 
 int main()
 {
-    unsigned int *piValor; /* ponteiro para inteiro */
 
-    unsigned int iVariavel = 27121975;
-
-
-    piValor=&iVariavel; /* pegando o endereço de memória da variável */
-
-    printf ("Endereco de piValor: %d\n", piValor);
-    printf ("Valor apontado por piValor: %d\n", *piValor);
-
-    *piValor=18011982;
-    printf ("\nValor alterado de iVarivael: %d\n", iVariavel);
-    printf ("Endereco de piValor: %d\n", piValor);
 
 	return EXIT_SUCCESS;
 }
