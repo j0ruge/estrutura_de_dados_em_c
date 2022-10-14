@@ -93,6 +93,13 @@ de dado como int, char ou float. A diferença do ponteiro em relação aos outro
 Por meio deste endereço pode-se acessar a informação, dizendo que a variável ponteiro aponta para uma posição de memória.<br>
 O maior problema em relação ao ponteiro é entender quando se está trabalhando com o seu valor, ou seja, o endereço, e quando se está trabalhando com a informação apontada por ele.
 
+### Operador & e *
+
+Ele é um operador unário que devolve o endereço na memória de seu operando. O operador & tem como significado o **endereço de**.<br>
+
+O ***** é um operador unário que devolve o valor da variável localizada no endereço que o segue
+
+
 
 
 ----
