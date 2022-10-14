@@ -1,4 +1,3 @@
-
 ## Vetor
 
 Também conhecidos como estruturas de dados unidimensionais homogêneas, *que utilizam somente um tipo de dado*
