@@ -12,7 +12,7 @@ Algumas características do tipo vetor([10]):
 
 **Fórmula genérica do vetor
 
-$$({\left Pos_n= enderecoInicial + ( (n - 1) * tamanhoDoTipoDoElemento) \right})$$
+$$\left ({Pos_n= enderecoInicial + ( (n - 1) * tamanhoDoTipoDoElemento) \right})$$
 
 
 ## Referências
