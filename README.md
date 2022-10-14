@@ -17,6 +17,15 @@ Algumas características do tipo vetor([10]):
 
 $${Pos_n= enderecoInicial + ( (n - 1) * tamanhoDoTipoDoElemento) }$$
 
+```
+begin
+ |	Endereço Elemento 1 <-- endereço inicial 
+ |	Endereço Elemento 2 <-- endereço inicial + (1 * tamanho Elemento)
+ |	Endereço Elemento 1 <-- endereço inicial + (2 * tamanho Elemento)
+ |	Endereço Elemento 1 <-- endereço inicial + (3 * tamanho Elemento)
+end
+```
+
 
 ## Referências
 [LaTeX Equation Editor](https://www.codecogs.com/latex/eqneditor.php)
