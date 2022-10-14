@@ -95,15 +95,15 @@ O maior problema em relação ao ponteiro é entender quando se está trabalhand
 
 ### Operador & e *
 
-Ele é um operador unário que devolve o endereço na memória de seu operando. O operador & tem como significado **o endereço de**.<br>
+Ele é um operador unário que devolve o endereço na memória de seu operando. O operador & tem como significado **O endereço de**.<br>
 
 O * é um operador unário que devolve o valor da variável localizada no endereço que o segue.<br>
 
-O operador * tem como signiicado ***no endereço de***.<br>
+O operador * tem como signiicado ***NO endereço de***.<br>
 
 Por exemplo:<br>
 
-```m = &count;``` *põe o endereço na memória da variável count em **m** *.<br>
+```m = &count;``` * põe o endereço na memória da variável count em **m** *.<br>
 ```q = *m;``` *coloca o valor de count em **q** *.<br>
 
 > **Warning**
