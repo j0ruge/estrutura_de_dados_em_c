@@ -81,7 +81,7 @@ tipo_do_dado nome_da_matriz[tamanho_dimensão_1] [tamanho_dimensão_2] [tamanho_
 > **Note**
 > 
 > Uma regra que se pode sempre levar em consideração:<br>
-> para cada dimensão de uma matriz, sempre haverá um laço (normalmente um for). Se houver duas dimensões, então haverá dois laços.
+> Para cada dimensão de uma matriz, sempre haverá um laço (normalmente um for). Se houver quatro dimensões, então haverá quatro laços.
 
 
 ----
