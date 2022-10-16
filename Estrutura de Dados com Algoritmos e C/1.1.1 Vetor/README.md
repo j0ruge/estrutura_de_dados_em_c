@@ -1,5 +1,10 @@
 
+## Programa 1.2: Exemplo de uso de vetores
 
+```
+```
+
+----
 ## Programa 1.8: Vetor como ponteiro
 
 O programa 1.8 mostra a utilização de um vetor com aritmética de ponteiros.
