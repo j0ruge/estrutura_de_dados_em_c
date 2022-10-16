@@ -123,6 +123,12 @@ Por exemplo:<br>
 Vetores nada mais são do que ponteiros com alocação estática de memória, logo, todo vetor na linguagem C é um ponteiro, tal que o acesso aos índices do vetor
 podem ser realizados através de aritmética de ponteiros.
 
+
+# 1.2 Dados Heterogêneos
+
+
+
+
 ----
 ## Referências
 [LaTeX Equation Editor](https://www.codecogs.com/latex/eqneditor.php)
