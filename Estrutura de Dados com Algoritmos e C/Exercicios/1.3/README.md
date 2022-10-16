@@ -1,7 +1,7 @@
 # 1.3 Exercícios
 
-1) Fazer um programa em C que implemente o algoritmo 1.1 para acessar elementos de vetores via ponteiros.<br>
-Crie uma função:
+### 1) Fazer um programa em C que implemente o algoritmo 1.1 para acessar elementos de vetores via ponteiros.<br>
+* Crie uma função:
 
 ```
 imprime_array_elemento(int *aArray, int iElemento);
