@@ -11,3 +11,14 @@ Process returned 0 (0x0)   execution time : 0.044 s
 Press any key to continue.
 ```
 ----
+## Programa 1.6: Ponteiros como referência em funções.
+
+```
+Entre com os valores: 5 4
+Endereco de iResultado = 2095412
+Endereco de piResultado = 2095412
+Soma : 9
+
+Process returned 0 (0x0)   execution time : 5.295 s
+Press any key to continue.
+```
