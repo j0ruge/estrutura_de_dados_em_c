@@ -13,8 +13,14 @@ Press any key to continue.
 ----
 ## Programa 1.6: Ponteiros como referência em funções.
 
+### Entrada
 ```
 Entre com os valores: 5 4
+```
+
+### Saída
+
+```
 Endereco de iResultado = 2095412
 Endereco de piResultado = 2095412
 Soma : 9
