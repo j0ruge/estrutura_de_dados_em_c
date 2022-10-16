@@ -1,6 +1,21 @@
 
 ## Programa 1.1: Declaração de vetor em C
 
+
+```
+21
+22
+24
+a
+b
+c
+d
+
+Process returned 0 (0x0)   execution time : 0.041 s
+Press any key to continue.
+
+```
+----
 ## Programa 1.2: Exemplo de uso de vetores
 
 ```
