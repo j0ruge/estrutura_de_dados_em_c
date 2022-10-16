@@ -1,7 +1,17 @@
 
+## Programa 1.1: Declaração de vetor em C
+
 ## Programa 1.2: Exemplo de uso de vetores
 
 ```
+Entre com o valor 1: 56
+Entre com o valor 2: 45
+Entre com o valor 3: 43
+Entre com o valor 4: 45
+Entre com o valor 5: 56
+Media: 49.00
+Process returned 0 (0x0)   execution time : 13.025 s
+Press any key to continue.
 ```
 
 ----
