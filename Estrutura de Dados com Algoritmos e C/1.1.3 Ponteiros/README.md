@@ -33,6 +33,11 @@ Press any key to continue.
 
 ## Programa 1.7: Aritmética com ponteiros.
 
+Com uma variável do tipo ponteiro, é possível realizar operações de soma e subtração. Será somada ou diminuída no ponteiro a quantidade de endereços
+de memória relativos ao tipo do ponteiro.<br>
+Por exemplo, um ponteiro para int ocupa 4 bytes, uma operação de soma neste ponteiro irá acrescentar 4 posições (unidades) na memória.<br>
+O programa 1.7 é visto como os endereços de memória são manipulados através de aritmética de ponteiros, e a diferença entre o tipo **char**, *que ocupa 1 byte de memória*, e o tipo **int**, *que ocupa 4 bytes*.
+
 ```
 Endereco de piValor = 1117781276
 Endereco de pcValor = 1117781275
