@@ -31,3 +31,21 @@ Onde:
 ```
 imprime_matriz_elemento_estatica(int paMatriz[2][2], int piLinha, int piColuna);
 ```
+
+```
+\* Algoritmo 1.2: Cálculo da posição de índices de uma matriz na memória *\
+
+begin
+ | M00 <-- endereço Inicial 
+ | M01 <-- endereço Inicial + (1 * tamanho Elemento)
+ | M10 <-- endereço Inicial + (i * C * tamanho Elemento)
+ | M11 <-- endereço Inicial + (i * C * tamanho Elemento) + (j * tamanho Elemento)
+end
+```
+
+$${Pos_ij= enderecoInicial + ((i-1) * C * tamanhoDoTipoDoElemento) + ((j-1) * tamanhoDoTipoDoElemento)}$$
+
+Onde: 
+* **C** a quantidade de colunas por linhas, 
+* **i** o número da linha e 
+* **j** a posição do elemento dentro linha
