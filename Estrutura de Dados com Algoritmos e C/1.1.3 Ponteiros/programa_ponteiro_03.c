@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 
  /*
  * Estrutura de Dados com Algoritmos e C, PDF pág 38
@@ -8,6 +9,7 @@
 
 int main()
 {
+    setlocale(LC_ALL, "Portuguese");
 
     int *piValor;
     int iValor;
@@ -27,8 +29,8 @@ int main()
     printf ("\nApós incremento de piValor e pcValor\n");
     printf ("====================================\n");
 
-    
-    printf ("Endereco de piValor = %d\n", piValor);    
+
+    printf ("Endereco de piValor = %d\n", piValor);
     printf ("Endereco de pcValor = %d\n", pcValor);
 
 
