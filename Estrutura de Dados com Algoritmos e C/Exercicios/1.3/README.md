@@ -29,5 +29,5 @@ Onde:
 * Crie uma função:
 
 ```
-imprime_matriz_elemento_estatica(int paMatriz[][2], int piLinha, int piColuna);
+imprime_matriz_elemento_estatica(int paMatriz[2][2], int piLinha, int piColuna);
 ```
