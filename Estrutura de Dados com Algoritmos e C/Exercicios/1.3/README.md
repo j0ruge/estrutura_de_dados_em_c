@@ -18,3 +18,5 @@ begin
 end
 ```
 $${Pos_n= enderecoInicial + ( (n - 1) * tamanhoDoTipoDoElemento) }$$
+
+n = Elemento
