@@ -28,3 +28,20 @@ Soma : 9
 Process returned 0 (0x0)   execution time : 5.295 s
 Press any key to continue.
 ```
+
+----
+
+## Programa 1.7: Aritmética com ponteiros.
+
+```
+Endereco de piValor = 1117781276
+Endereco de pcValor = 1117781275
+
+Após incremento de piValor e pcValor
+====================================
+Endereco de piValor = 1117781280
+Endereco de pcValor = 1117781276
+
+Process returned 0 (0x0)   execution time : 0.047 s
+Press any key to continue.
+```
