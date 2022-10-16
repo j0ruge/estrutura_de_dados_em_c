@@ -131,6 +131,10 @@ representar uma estrutura de dados.<br>
 Normalmente, este tipo de dado é chamado de **registro**.<br>
 A linguagem C utiliza as **estruturas** para representar um registro.<br>
 
+> **Note**
+> 
+> Estruturas são utilizadas para referenciar múltiplos tipos de dados.
+
 
 ----
 ## Referências
