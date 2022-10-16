@@ -43,7 +43,7 @@ begin
 end
 ```
 
-$${Pos_ij= enderecoInicial + ((i-1) * C * tamanhoDoTipoDoElemento) + ((j-1) * tamanhoDoTipoDoElemento)}$$
+$${Pos_{ij}= enderecoInicial + ((i-1) * C * tamanhoDoTipoDoElemento) + ((j-1) * tamanhoDoTipoDoElemento)}$$
 
 Onde: 
 * **C** a quantidade de colunas por linhas, 
