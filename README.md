@@ -1,5 +1,10 @@
 # 1.1 Dados Homogêneos
 
+Uma estrutura de dados, que utiliza somente um tipo de dado, em sua definição é conhecida como dados homogêneos.<br>
+Variáveis compostas homogêneas correspondem a posições de memória, identificadas por um mesmo nome, individualizado por índices e cujo conteúdo é composto do mesmo tipo.<br>
+Sendo os **vetores** (*também conhecidos como estruturas de dados unidimensionais*) e as **matrizes** (*estruturas de dados bidimensionais*) os representantes dos dados homogêneos.
+
+
 ## Vetor
 
 Também conhecidos como estruturas de dados unidimensionais homogêneas, *que utilizam somente um tipo de dado*
