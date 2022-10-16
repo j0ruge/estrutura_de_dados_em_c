@@ -110,6 +110,11 @@ Por exemplo:<br>
 >
 >Cuide-se para não confundir o operador de ponteiros (*) como multiplicação na utilização de ponteiros e vice-versa.
 
+----
+### Vetores e matrizes como ponteiros em C
+
+Vetores nada mais são do que ponteiros com alocação estática de memória, logo, todo vetor na linguagem C é um ponteiro, tal que o acesso aos índices do vetor
+podem ser realizados através de aritmética de ponteiros.
 
 ----
 ## Referências
