@@ -54,7 +54,7 @@ A matriz é um arranjo bidimensional ou multidimensional homogêneo de alocaçã
 ### Fórmula 
 Formula genérica para cálculo de posição na memória de um elemento qualquer
 
-$${Pos_ij= enderecoInicial + ((i-1) * C * tamanhoDoTipoDoElemento) + ((j-1) * tamanhoDoTipoDoElemento)}$$
+$${Pos_{ij}= enderecoInicial + ((i-1) * C * tamanhoDoTipoDoElemento) + ((j-1) * tamanhoDoTipoDoElemento)}$$
 
 Onde: 
 * **C** a quantidade de colunas por linhas, 
