@@ -34,6 +34,9 @@ begin
  | Endereço Elemento 4 <-- endereço inicial + (3 * tamanho Elemento)
 end
 ```
+Onde: 
+* **n** é o Elemento, 
+
 
 ### Definição
 
