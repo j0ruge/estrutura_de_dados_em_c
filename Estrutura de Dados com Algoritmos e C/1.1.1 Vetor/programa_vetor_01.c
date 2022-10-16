@@ -1,7 +1,7 @@
 #include <stdio.h>
 
  /*
- * Estrutura de Dados com Algoritmos e C, PDF p√°g 29
+ * Estrutura de Dados com Algoritmos e C, PDF p·g 29
  * Programa 1.2: Exemplo de uso de vetores,
  */
 
