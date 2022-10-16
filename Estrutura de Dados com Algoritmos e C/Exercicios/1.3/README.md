@@ -21,3 +21,13 @@ $${Pos_n= enderecoInicial + ( (n - 1) * tamanhoDoTipoDoElemento) }$$
 
 Onde:
 * **n** é o Elemento, 
+
+----
+
+### 2) Fazer um programa em C que implemente o algoritmo 1.2 para acessar elementos de uma matriz via ponteiros. Considerando uma matriz de 2x2 :
+
+* Crie uma função:
+
+```
+imprime_matriz_elemento_estatica(int paMatriz[][2], int piLinha, int piColuna);
+```
