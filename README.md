@@ -123,6 +123,15 @@ Por exemplo:<br>
 Vetores nada mais são do que ponteiros com alocação estática de memória, logo, todo vetor na linguagem C é um ponteiro, tal que o acesso aos índices do vetor
 podem ser realizados através de aritmética de ponteiros.
 
+
+# 1.2 Dados Heterogêneos
+
+Uma estrutura de dados é chamada de heterogênea quando envolve a utilização de mais de um tipo básico de dado (inteiro ou caractere, por exemplo) para
+representar uma estrutura de dados.<br>
+Normalmente, este tipo de dado é chamado de **registro**.<br>
+A linguagem C utiliza as **estruturas** para representar um registro.<br>
+
+
 ----
 ## Referências
 [LaTeX Equation Editor](https://www.codecogs.com/latex/eqneditor.php)
