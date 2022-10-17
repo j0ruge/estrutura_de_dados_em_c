@@ -12,10 +12,14 @@
  */
 
 void imprime_matriz_elemento_estatica(int *[*][2], int *, int *);
+void imprime_matriz_elemento_estatica_v0(int *[*][2], int, int);
 int indiceLinha;
 int indiceColuna;
 
 int aMatriz[DIMENSAO_LINHA][DIMENSAO_LINHA];
+
+
+int ponteiroMatriz;
 
 
 int main()
@@ -26,6 +30,8 @@ int main()
     aMatriz[0][1]=7;
     aMatriz[1][0]=12;
     aMatriz[1][1]=32;
+
+    ponteiroMatriz = &aMatriz;
 
     int iLine = 1;
     int iColumn = 0;
@@ -44,6 +50,9 @@ int main()
 
 
     imprime_matriz_elemento_estatica(&aMatriz[0][0], &iLine, &iColumn);
+
+     printf("Ultimo\n");
+     imprime_matriz_elemento_estatica_v0(&aMatriz[0][0], iLine, iColumn);
 
 	return EXIT_SUCCESS;
 }
@@ -65,6 +74,27 @@ void imprime_matriz_elemento_estatica(int *paMatriz[][2], int *piLinha, int *piC
         for(indiceColuna=0; indiceColuna < DIMENSAO_COLUNA; indiceColuna++)
         {
             printf("%d, %d - Alocado na memória em: %d\n", indiceLinha, indiceColuna, matriz_index_memory_location(paMatriz, 2, indiceLinha, indiceColuna));
+        }
+    }
+
+};
+
+void imprime_matriz_elemento_estatica_v0(int *paMatriz[0][2], int lineIndex, int columnIndex)
+{
+    int iLinha, iColuna;
+    int *result;
+    result = matriz_index_memory_location(paMatriz, DIMENSAO_COLUNA, lineIndex,  columnIndex);
+    printf("%d", result);
+
+
+    for(iLinha=0; iLinha < DIMENSAO_LINHA; iLinha++)
+    {
+        for(iColuna=0; iColuna < DIMENSAO_COLUNA; iColuna++)
+        {
+            if((iLinha == lineIndex) && (iColuna == columnIndex))
+               {
+                   printf("%d", paMatriz[iLinha][iColuna]);
+               }
         }
     }
 
