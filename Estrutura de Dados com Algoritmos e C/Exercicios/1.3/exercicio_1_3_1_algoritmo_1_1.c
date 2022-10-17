@@ -3,11 +3,14 @@
 #include <locale.h>
 #include <string.h>
 
+
 #define TAMANHO_ARRAY 10
  /*
  * Estrutura de Dados com Algoritmos e C, PDF pág 42
  * Exercício 1.3.1
  * Algoritmo 1.1: Cálculo da posição de índices de um vetor na memória
+ *
+ * Ref.: https://pt.stackoverflow.com/questions/336172/para-que-serve-o-sscanf-e-sprintf
  */
 
  void imprime_array_elemento(int *, int);
