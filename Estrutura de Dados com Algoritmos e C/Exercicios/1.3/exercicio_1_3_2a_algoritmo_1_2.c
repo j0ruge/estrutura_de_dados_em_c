@@ -12,10 +12,10 @@
  */
 
 void imprime_matriz_elemento_estatica(int *[*][2], int *, int *);
+int indiceLinha;
+int indiceColuna;
 
-int aMatriz[DIMENSAO_LINHA][DIMENSAO_COLUNA];
-
-
+int aMatriz[DIMENSAO_LINHA][DIMENSAO_LINHA];
 
 
 int main()
@@ -28,23 +28,37 @@ int main()
     aMatriz[1][1]=32;
 
     int iLine = 1;
-    int iColumn = 1;
+    int iColumn = 0;
+
+    int * ponteiro[DIMENSAO_LINHA][DIMENSAO_LINHA];
 
 
-    imprime_matriz_elemento_estatica(&aMatriz[DIMENSAO_LINHA][DIMENSAO_COLUNA], &iLine, &iColumn);
+     for(indiceLinha=0; indiceLinha < DIMENSAO_LINHA; indiceLinha++)
+    {
+        for(indiceColuna=0; indiceColuna < DIMENSAO_COLUNA; indiceColuna++)
+        {
+            printf("%d - armazenado em %d\n",aMatriz[indiceLinha][indiceColuna], &aMatriz[indiceLinha][indiceColuna] );
+        }
+    }
+    printf("Alocação de memória de %d, %d em %d\n", iLine, iColumn, matriz_index_memory_location(aMatriz, 2, iLine,  iColumn));
+
+
+    imprime_matriz_elemento_estatica(&aMatriz[0][0], &iLine, &iColumn);
 
 	return EXIT_SUCCESS;
 }
 
-void imprime_matriz_elemento_estatica(int *paMatriz[2][2], int *piLinha, int *piColuna)
+void imprime_matriz_elemento_estatica(int *paMatriz[][2], int *piLinha, int *piColuna)
 {
-    int indiceLinha;
-    int indiceColuna;
 
+    int *memory_address;
+    memory_address = matriz_index_memory_location(paMatriz, 2, *piLinha, *piColuna);
 
+    printf("Memory Address:  %d\n",memory_address);
+    printf("Endereço da Matriz em %d\n",paMatriz);
 
-    printf("Endereço da Matrix em %d\n",paMatriz);
-    printf("%d\n",matriz_index_memory_location(paMatriz, piLinha, piColuna));
+    printf("%d\n",matriz_index_memory_location(paMatriz, 2, *piLinha, *piColuna));
+
 
     for(indiceLinha=0; indiceLinha < DIMENSAO_LINHA; indiceLinha++)
     {
