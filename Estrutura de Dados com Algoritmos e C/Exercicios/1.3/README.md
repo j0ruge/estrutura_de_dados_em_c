@@ -49,3 +49,11 @@ Onde:
 * **C** a quantidade de colunas por linhas, 
 * **i** o número da linha e 
 * **j** a posição do elemento dentro linha
+
+---
+
+* Após entender o capítulo , crie uma função:
+
+```
+imprime_matriz_elemento_dinamica(int ** paMatriz, int piLinha, int piColuna);
+```
