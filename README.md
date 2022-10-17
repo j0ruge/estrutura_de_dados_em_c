@@ -181,6 +181,18 @@ A função realloc permite que uma área previamente alocada seja aumentada ou d
 É a função malloc que realiza a alocação de memória. Deve-se informar para a função a quantidade de bytes para alocação.<br>
 A função irá retornar, se existir memória suiciente, um endereço que deve ser colocado em uma variável do tipo ponteiro.<br>
 Como a função retorna um ponteiro para o tipo void, deve-se utilizar o typecast, transformando este endereço para o tipo de ponteiro desejado.<br>
+----
+
+### 2.3.2 Função calloc
+Em vez de se alocar uma quantidade de bytes através da função malloc, pode-se usar a função calloc e especiicar a quantidade de bloco de um determinado
+tamanho. <br>
+Funcionalmente a alocação irá ocorrer de maneira idêntica. <br>
+A única diferença entre o malloc e o calloc é que a última função, além de alocar o espaço, também inicializa o mesmo com zeros.<br>
+----
+### 2.3.3 Função realloc
+Às vezes é necessário expandir uma área alocada. Para isto deve-se usar a função realloc.<br>
+Deve-se passar para ela o ponteiro retornado pelo malloc e a indicação do novo tamanho. <br>
+A realocação de memória pode resultar na troca de blocos na memória.<br>
 
 ----
 ## Referências
