@@ -17,7 +17,7 @@ int main()
 {
     setlocale(LC_ALL, "Portuguese");
     int aNumerosPares[TAMANHO_ARRAY] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
-    imprime_array_elemento(&aNumerosPares, 6);
+    imprime_array_elemento(&aNumerosPares, 8);
 	return EXIT_SUCCESS;
 }
 
@@ -29,6 +29,8 @@ void imprime_array_elemento(int *aArray, int iElemento){
     int enderecoElemento;
     ppResult = &temp;
     result = &temp;
+
+    char strMemoryAddress[10];
     int iIndice;
     for(iIndice=0; iIndice < TAMANHO_ARRAY; iIndice++)
     {
@@ -49,11 +51,15 @@ void imprime_array_elemento(int *aArray, int iElemento){
                 int_memory_array_index_position(aArray, iIndice)
                );
     }
+
+    sprintf(strMemoryAddress,"%d",enderecoElemento );
+    printf("%s\n", strMemoryAddress);
     printf("\nEndereco do Array: %d\n", aArray);
     printf("\nEndereco do Elemento dentro do Array: %x\n", enderecoElemento);
 
     printf("Inserir o endereço de memória do Elemento: \n");
-    scanf("%x", &result);
+   // scanf("%x", &result);
+    sscanf(strMemoryAddress, "%d", &result);
     printf("Valor recuperado: %d\n", *result );
 };
 
