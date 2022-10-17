@@ -10,7 +10,9 @@
  * Exercício 1.3.1
  * Algoritmo 1.1: Cálculo da posição de índices de um vetor na memória
  *
- * Ref.: https://pt.stackoverflow.com/questions/336172/para-que-serve-o-sscanf-e-sprintf
+ * Ref.:
+ * https://pt.stackoverflow.com/questions/336172/para-que-serve-o-sscanf-e-sprintf
+ * https://stackoverflow.com/questions/8257714/how-to-convert-an-int-to-string-in-c
  */
 
  void imprime_array_elemento(int *, int);
