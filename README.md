@@ -163,6 +163,12 @@ Na linguagem C, uma matriz na prática é um vetor de ponteiros, onde cada colun
 
 Na linguagem C, a alocação dinâmica de memória pode ser realizada com apenas quatro chamadas a funções:
 
+```
+void * malloc(int qty_bytes_alloc);
+void * calloc(int qty, int size);
+void * realloc(void * pointer, int new_size);
+free( void * pointer);
+```
 
 ----
 ## Referências
