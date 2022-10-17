@@ -200,5 +200,13 @@ Deve-se passar para ela o ponteiro retornado pelo malloc e a indicação do novo
 A realocação de memória pode resultar na troca de blocos na memória.<br>
 
 ----
+
+### 2.3.4 Função free
+
+Quando não se deseja mais uma área alocada, deve-se liberá-la através da função free. <br>
+Deve ser passado para a função o endereço, que se deseja liberar, que foi devolvido quando a alocação da memória ocorreu.
+
+
+----
 ## Referências
 [LaTeX Equation Editor](https://www.codecogs.com/latex/eqneditor.php)
