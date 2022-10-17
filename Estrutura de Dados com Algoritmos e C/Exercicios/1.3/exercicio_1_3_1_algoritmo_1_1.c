@@ -22,14 +22,21 @@ int main()
 }
 
 void imprime_array_elemento(int *aArray, int iElemento){
+    int *result;
+    int **ppResult;
     int memoryPosition = 0;
+    int temp = 2;
+    int enderecoElemento;
+    ppResult = &temp;
+    result = &temp;
     int iIndice;
     for(iIndice=0; iIndice < TAMANHO_ARRAY; iIndice++)
     {
     	if( iIndice == (iElemento-1))
 		{
     		printf("\nElemento desejado tem Valor %d e foi encontrado no Índice %d do Array.\n", aArray[iIndice], iIndice);
-            printf("Este valor está alocado no endereço de memória: %ld\n", int_memory_array_index_position(aArray, iIndice));
+    		enderecoElemento = int_memory_array_index_position(aArray, iIndice);
+            printf("Este valor está alocado no endereço de memória: %ld\n", enderecoElemento);
 		}
     }
     printf("\nTodos elementos\n");
@@ -43,6 +50,11 @@ void imprime_array_elemento(int *aArray, int iElemento){
                );
     }
     printf("\nEndereco do Array: %d\n", aArray);
+    printf("\nEndereco do Elemento dentro do Array: %x\n", enderecoElemento);
+
+    printf("Inserir o endereço de memória do Elemento: \n");
+    scanf("%x", &result);
+    printf("Valor recuperado: %d\n", *result );
 };
 
 int int_memory_array_index_position(int aArray,int index){
