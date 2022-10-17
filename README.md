@@ -159,6 +159,10 @@ Outras linguagens como o C exigem que o trabalho de alocação de memória seja 
 Na linguagem C, uma matriz na prática é um vetor de ponteiros, onde cada coluna é um ponteiro para uma linha. <br>
 
 
+## 2.3 Funções para alocação de memória
+
+Na linguagem C, a alocação dinâmica de memória pode ser realizada com apenas quatro chamadas a funções:
+
 
 ----
 ## Referências
