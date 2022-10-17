@@ -137,6 +137,11 @@ A linguagem C utiliza as **estruturas** para representar um registro.<br>
 > **Note**
 > 
 > Estruturas são utilizadas para referenciar múltiplos tipos de dados.
+----
+
+# 2. Uso de Memória
+
+## 2.1 Alocação de memória Estática x Dinâmica
 
 
 ----
