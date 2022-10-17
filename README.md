@@ -170,6 +170,18 @@ void * realloc(void * pointer, int new_size);
 free( void * pointer);
 ```
 
+A função malloc permite que seja feita a alocação de uma nova área de memória para uma estrutura. <br>
+A função calloc tem a mesma funcionalidade de malloc, exceto que devem ser fornecidos o tamanho da área e a quantidade de elementos. <br>
+A função realloc permite que uma área previamente alocada seja aumentada ou diminuída e a função free libera uma área alocada previamente com a função malloc, calloc ou realloc.
+
+----
+
+### 2.3.1 Função malloc
+
+É a função malloc que realiza a alocação de memória. Deve-se informar para a função a quantidade de bytes para alocação.<br>
+A função irá retornar, se existir memória suiciente, um endereço que deve ser colocado em uma variável do tipo ponteiro.<br>
+Como a função retorna um ponteiro para o tipo void, deve-se utilizar o typecast, transformando este endereço para o tipo de ponteiro desejado.<br>
+
 ----
 ## Referências
 [LaTeX Equation Editor](https://www.codecogs.com/latex/eqneditor.php)
