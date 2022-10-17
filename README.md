@@ -143,13 +143,21 @@ A linguagem C utiliza as **estruturas** para representar um registro.<br>
 
 ## 2.1 Alocação de memória Estática x Dinâmica
 
-
 A alocação estática ocorre em tempo de compilação, ou seja, no momento em que se define uma variável ou estrutura é necessário que se definam seu tipo
 e tamanho. <br>
 Nesse tipo de alocação, ao se colocar o programa em execução, a memória necessária para utilizar as variáveis e estruturas estáticas precisa ser reservada e deve ficar disponível até o término do programa (rotina ou função).<br>
 A alocação dinâmica ocorre em tempo de execução, ou seja, as variáveis e estruturas são declaradas sem a necessidade de se definir seu tamanho, pois nenhuma memória será reservada ao colocar o programa em execução.<br>
 Durante a execução do programa, no momento em que uma variável ou parte de uma estrutura precise ser utilizada, sua memória será reservada e, no momento em que não
 for mais necessária, deve ser liberada. Isso é feito com o auxílio de comandos ou funções que permitem, por meio do programa, reservar e/ou liberar memória.<br>
+
+----
+## 2.2 Alocação dinâmica de memória
+
+Várias linguagens de programação possibilitam manipular dinamicamente a memória das suas estruturas de dados. <br>
+Algumas linguagens como o Java possibilitam que uma estrutura de dados cresça ou diminua quase que sem interferência do programador. <br>
+Outras linguagens como o C exigem que o trabalho de alocação de memória seja feito antecipadamente pelo programador.<br>
+Na linguagem C, uma matriz na prática é um vetor de ponteiros, onde cada coluna é um ponteiro para uma linha. <br>
+
 
 
 ----
