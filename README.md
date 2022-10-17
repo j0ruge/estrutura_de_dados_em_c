@@ -206,6 +206,17 @@ A realocação de memória pode resultar na troca de blocos na memória.<br>
 Quando não se deseja mais uma área alocada, deve-se liberá-la através da função free. <br>
 Deve ser passado para a função o endereço, que se deseja liberar, que foi devolvido quando a alocação da memória ocorreu.
 
+----
+
+## 2.4 Utilizando as funções para alocação de memória
+
+Um vetor nada mais é do que um ponteiro com alocação estática de memória.
+A declaração int aVetor[10]; é equivalente:
+
+```
+int *aVetor;
+aVetor = (int *) malloc(10 * sizeof(int *));
+```
 
 ----
 ## Referências
