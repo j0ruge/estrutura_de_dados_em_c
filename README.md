@@ -179,7 +179,7 @@ A função realloc permite que uma área previamente alocada seja aumentada ou d
 ### 2.3.1 Função malloc
 
 É a função malloc que realiza a alocação de memória. Deve-se informar para a função a quantidade de bytes para alocação.<br>
-A função irá retornar, se existir memória suiciente, um endereço que deve ser colocado em uma variável do tipo ponteiro.<br>
+A função irá retornar, se existir memória suficiente, um endereço que deve ser colocado em uma variável do tipo ponteiro.<br>
 Como a função retorna um ponteiro para o tipo void, deve-se utilizar o typecast, transformando este endereço para o tipo de ponteiro desejado.<br>
 
 ----
