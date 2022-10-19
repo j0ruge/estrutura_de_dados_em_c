@@ -1,102 +1,1 @@
-# 4. FunÁıes
-W. Celes e J. L. Rangel
-
-## 4.1. DefiniÁ„o de funÁıes
-
-As funÁıes dividem grandes tarefas de computaÁ„o em tarefas menores. Os programas em C geralmente consistem de v·rias pequenas funÁıes em vez de poucas de maior tamanho. A
-criaÁ„o de funÁıes evita a repetiÁ„o de cÛdigo, de modo que um procedimento que È repetido deve ser transformado numa funÁ„o que, ent„o, ser· chamada diversas vezes. Um
-programa bem estruturado deve ser pensado em termos de funÁıes, e estas, por sua vez, podem (e devem, se possÌvel) esconder do corpo principal do programa detalhes ou
-particularidades de implementaÁ„o. Em C, tudo È feito atravÈs de funÁıes. Os exemplos anteriores utilizam as funÁıes da biblioteca padr„o para realizar entrada e saÌda. Neste
-capÌtulo, discutiremos a codificaÁ„o de nossas prÛprias funÁıes.
-
-A forma geral para definir uma funÁ„o È:
-
-```
-tipo_retornado nome_da_funÁ„o (lista de par‚metros...)
-{
-	corpo da funÁ„o
-}
-
-``` 
-Para ilustrar a criaÁ„o de funÁıes, consideraremos o c·lculo do fatorial de um n˙mero.
-Podemos escrever uma funÁ„o que, dado um determinado n˙mero inteiro n„o negativo n,
-imprime o valor de seu fatorial. Um programa que utiliza esta funÁ„o seria:
-
-```
-/* programa que le um numero e imprime seu fatorial */
-#include <stdio.h>
-void fat (int n);
-/* FunÁ„o principal */
-int main (void)
-{
-int n;
-scanf("%d", &n);
-fat(n);
-return 0;
-}
-/* FunÁ„o pa/* programa que le um numero e imprime seu fatorial */
-#include <stdio.h>
-void fat(int n);
-/* FunÁ„o principal */
-int main(void)
-{
-	int n;
-	scanf("%d", &n);
-	fat(n);
-	return 0;
-}
-/* FunÁ„o para imprimir o valor do fatorial */
-void fat(int n)
-{
-	int i;
-	int f = 1;
-	for (i = 1; i <= n; i++)
-		f *= i;
-	printf("Fatorial = %d\n", f);
-}
-
-```
-
-Notamos, neste exemplo, que a funÁ„o `fat` recebe como par‚metro o n˙mero cujo fatorial deve ser impresso.<br>
-Os par‚metros de uma funÁ„o devem ser listados, com seus respectivos tipos, entre os parÍnteses que seguem o nome da funÁ„o. Quando uma funÁ„o n„o tem
-par‚metros, colocamos a palavra reservada `void` entre os parÍnteses. <br>
-Devemos notar que `main` tambÈm È uma funÁ„o; sua ˙nica particularidade consiste em ser a funÁ„o automaticamente executada apÛs o programa ser carregado.<br>
-Como as funÁıes `main` que temos apresentado n„o recebem par‚metros, temos usado a palavra `void` na lista de par‚metros.
-
-AlÈm de receber par‚metros, uma funÁ„o pode ter um valor de retorno associado. No exemplo do c·lculo do fatorial, a funÁ„o fat n„o tem nenhum valor de retorno, portanto
-colocamos a palavra void antes do nome da funÁ„o, indicando a ausÍncia de um valor de retorno.
-
-```
-void fat (int n)
-{
-	. . .
-}
-```
-
-A funÁ„o `main` obrigatoriamente deve ter um valor inteiro como retorno. Esse valor pode ser usado pelo sistema operacional para testar a execuÁ„o do programa. A convenÁ„o
-geralmente utilizada faz com que a funÁ„o main retorne zero no caso da execuÁ„o ser bem sucedida ou diferente de zero no caso de problemas durante a execuÁ„o.
-
-Por fim, salientamos que C exige que se coloque o protÛtipo da funÁ„o antes desta ser chamada. O protÛtipo de uma funÁ„o consiste na repetiÁ„o da linha de sua definiÁ„o
-seguida do caractere (;). Temos ent„o:
-
-
-```
-void fat (int n); /* obs: existe ; no protÛtipo */
-int main (void)
-{
-	. . .
-}
-void fat (int n) /* obs: nao existe ; na definiÁ„o */
-{
-	. . .
-}
-```
-A rigor, no protÛtipo n„o h· necessidade de indicarmos os nomes dos par‚metros, apenas os seus tipos, portanto seria v·lido escrever: void fat (int);. PorÈm, geralmente
-mantemos os nomes dos par‚metros, pois servem como documentaÁ„o do significado de cada par‚metro, desde que utilizemos nomes coerentes. O protÛtipo da funÁ„o È necess·rio
-para que o compilador verifique os tipos dos par‚metros na chamada da funÁ„o. Por exemplo, se tent·ssemos chamar a funÁ„o com fat(4.5); o compilador provavelmente
-indicaria o erro, pois estarÌamos passando um valor real enquanto a funÁ„o espera um valor inteiro. … devido a esta necessidade que se exige a inclus„o do arquivo stdio.h para a
-utilizaÁ„o das funÁıes de entrada e saÌda da biblioteca padr„o. Neste arquivo, encontram-se, entre outras coisas, os protÛtipos das funÁıes `printf` e `scanf`.
-
-Uma funÁ„o pode ter um valor de retorno associado. Para ilustrar a discuss„o, vamos reescrever o cÛdigo acima, fazendo com que a funÁ„o fat retorne o valor do fatorial. A
-funÁ„o main fica ent„o respons·vel pela impress„o do valor.
-
+# 4. Fun√ß√µesW. Celes e J. L. Rangel## 4.1. Defini√ß√£o de fun√ß√µesAs fun√ß√µes dividem grandes tarefas de computa√ß√£o em tarefas menores. Os programas em C geralmente consistem de v√°rias pequenas fun√ß√µes em vez de poucas de maior tamanho. Acria√ß√£o de fun√ß√µes evita a repeti√ß√£o de c√≥digo, de modo que um procedimento que √© repetido deve ser transformado numa fun√ß√£o que, ent√£o, ser√° chamada diversas vezes. Umprograma bem estruturado deve ser pensado em termos de fun√ß√µes, e estas, por sua vez, podem (e devem, se poss√≠vel) esconder do corpo principal do programa detalhes ouparticularidades de implementa√ß√£o. Em C, tudo √© feito atrav√©s de fun√ß√µes. Os exemplos anteriores utilizam as fun√ß√µes da biblioteca padr√£o para realizar entrada e sa√≠da. Nestecap√≠tulo, discutiremos a codifica√ß√£o de nossas pr√≥prias fun√ß√µes.A forma geral para definir uma fun√ß√£o √©:```tipo_retornado nome_da_fun√ß√£o (lista de par√¢metros...){	corpo da fun√ß√£o}``` Para ilustrar a cria√ß√£o de fun√ß√µes, consideraremos o c√°lculo do fatorial de um n√∫mero.Podemos escrever uma fun√ß√£o que, dado um determinado n√∫mero inteiro n√£o negativo n,imprime o valor de seu fatorial. Um programa que utiliza esta fun√ß√£o seria:```/* programa que le um numero e imprime seu fatorial */#include <stdio.h>void fat (int n);/* Fun√ß√£o principal */int main (void){int n;scanf("%d", &n);fat(n);return 0;}/* Fun√ß√£o pa/* programa que le um numero e imprime seu fatorial */#include <stdio.h>void fat(int n);/* Fun√ß√£o principal */int main(void){	int n;	scanf("%d", &n);	fat(n);	return 0;}/* Fun√ß√£o para imprimir o valor do fatorial */void fat(int n){	int i;	int f = 1;	for (i = 1; i <= n; i++)		f *= i;	printf("Fatorial = %d\n", f);}```Notamos, neste exemplo, que a fun√ß√£o `fat` recebe como par√¢metro o n√∫mero cujo fatorial deve ser impresso.<br>Os par√¢metros de uma fun√ß√£o devem ser listados, com seus respectivos tipos, entre os par√™nteses que seguem o nome da fun√ß√£o. Quando uma fun√ß√£o n√£o tempar√¢metros, colocamos a palavra reservada `void` entre os par√™nteses. <br>Devemos notar que `main` tamb√©m √© uma fun√ß√£o; sua √∫nica particularidade consiste em ser a fun√ß√£o automaticamente executada ap√≥s o programa ser carregado.<br>Como as fun√ß√µes `main` que temos apresentado n√£o recebem par√¢metros, temos usado a palavra `void` na lista de par√¢metros.Al√©m de receber par√¢metros, uma fun√ß√£o pode ter um valor de retorno associado. No exemplo do c√°lculo do fatorial, a fun√ß√£o fat n√£o tem nenhum valor de retorno, portantocolocamos a palavra void antes do nome da fun√ß√£o, indicando a aus√™ncia de um valor de retorno.```void fat (int n){	. . .}```A fun√ß√£o `main` obrigatoriamente deve ter um valor inteiro como retorno. Esse valor pode ser usado pelo sistema operacional para testar a execu√ß√£o do programa. A conven√ß√£ogeralmente utilizada faz com que a fun√ß√£o main retorne zero no caso da execu√ß√£o ser bem sucedida ou diferente de zero no caso de problemas durante a execu√ß√£o.Por fim, salientamos que C exige que se coloque o prot√≥tipo da fun√ß√£o antes desta ser chamada. O prot√≥tipo de uma fun√ß√£o consiste na repeti√ß√£o da linha de sua defini√ß√£oseguida do caractere (;). Temos ent√£o:```void fat (int n); /* obs: existe ; no prot√≥tipo */int main (void){	. . .}void fat (int n) /* obs: nao existe ; na defini√ß√£o */{	. . .}```A rigor, no prot√≥tipo n√£o h√° necessidade de indicarmos os nomes dos par√¢metros, apenas os seus tipos, portanto seria v√°lido escrever: ```void fat (int);```Por√©m, geralmente mantemos os nomes dos par√¢metros, pois servem como documenta√ß√£o do significado de cada par√¢metro, desde que utilizemos nomes coerentes. O prot√≥tipo da fun√ß√£o √© necess√°riopara que o compilador verifique os tipos dos par√¢metros na chamada da fun√ß√£o. Por exemplo, se tent√°ssemos chamar a fun√ß√£o com fat(4.5); o compilador provavelmenteindicaria o erro, pois estar√≠amos passando um valor real enquanto a fun√ß√£o espera um valor inteiro. √â devido a esta necessidade que se exige a inclus√£o do arquivo stdio.h para autiliza√ß√£o das fun√ß√µes de entrada e sa√≠da da biblioteca padr√£o. Neste arquivo, encontram-se, entre outras coisas, os prot√≥tipos das fun√ß√µes `printf` e `scanf`.Uma fun√ß√£o pode ter um valor de retorno associado. <br>Para ilustrar a discuss√£o, vamos reescrever o c√≥digo acima, fazendo com que a fun√ß√£o fat retorne o valor do fatorial.<br>A fun√ß√£o main fica ent√£o respons√°vel pela impress√£o do valor.```/* programa que le um numero e imprime seu fatorial (vers√£o 2) */#include <stdio.h>int fat(int n);int main(void){	int n, r;	scanf("%d", &n);	r = fat(n);	printf("Fatorial = %d\n", r);	return 0;}/* funcao para calcular o valor do fatorial */int fat(int n){	int i;	int f = 1;	for (i = 1; i <= n; i++)		f *= i;	return f;}```## 4.2. Pilha de execu√ß√£oApresentada a forma b√°sica para a defini√ß√£o de fun√ß√µes, discutiremos agora, em detalhe, como funciona a comunica√ß√£o entre a fun√ß√£o que chama e a fun√ß√£o que √© chamada.<br>J√° mencionamos na introdu√ß√£o deste curso que as fun√ß√µes s√£o independentes entre si.<br>As vari√°veis locais definidas dentro do corpo de uma fun√ß√£o, *e isto inclui os par√¢metros das fun√ß√µes*, n√£o existem fora da fun√ß√£o.<br>Cada vez que a fun√ß√£o √© executada, as vari√°veis locais s√£o criadas, e, quando a execu√ß√£o da fun√ß√£o termina, estas vari√°veis deixam de existir.A transfer√™ncia de dados entre fun√ß√µes √© feita atrav√©s dos par√¢metros e do valor de retorno da fun√ß√£o chamada. <br>Conforme mencionado, uma fun√ß√£o pode retornar um valor para a fun√ß√£o que a chamou e isto √© feito atrav√©s do comando return. <br>Quando uma fun√ß√£o tem um valor de retorno, a chamada da fun√ß√£o √© uma express√£o cujo valor resultante √© o valor retornado pela fun√ß√£o. <br>Por isso, foi v√°lido escrevermos na fun√ß√£o `main` acima a express√£o `r = fat(n);` que chama a fun√ß√£o `fat` armazenando seu valor de retorno na vari√°vel `r`.A comunica√ß√£o atrav√©s dos par√¢metros requer uma an√°lise mais detalhada. Para ilustrar a discuss√£o, vamos considerar o exemplo abaixo, no qual a implementa√ß√£o da fun√ß√£o `fat` foiligeiramente alterada:```/* programa que le um numero e imprime seu fatorial (vers√£o 3) */#include <stdio.h>int fat (int n);int main (void){	int n = 5;	int r;	r = fat ( n );	printf("Fatorial de %d = %d \n", n, r);	return 0;}int fat (int n){	int f = 1.0;	while (n != 0)	{		f *= n;		n--;	}	return f;}```

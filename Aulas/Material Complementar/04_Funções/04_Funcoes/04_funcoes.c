@@ -4,7 +4,7 @@
 void fatorial(int numero);
 int fatorial_v2(int numero);
 
-/* FunÁ„o principal */
+/* Fun√ß√£o principal */
 int main(void)
 {
 	int numero, resultado;
@@ -16,7 +16,7 @@ int main(void)
 	printf("Fatorial ver2 = %d\n", resultado);
 	return 0;
 }
-/* FunÁ„o para imprimir o valor do fatorial */
+/* Fun√ß√£o para imprimir o valor do fatorial */
 void fatorial(int numero)
 {
 	int indice;
@@ -28,7 +28,7 @@ void fatorial(int numero)
 	printf("Fatorial ver1 = %d\n", fatorial);
 }
 
-/* programa que le um numero e imprime seu fatorial (vers„o 2) */
+/* programa que le um numero e imprime seu fatorial (vers√£o 2) */
 int fatorial_v2(int numero)
 {
 	int indice;
