@@ -24,7 +24,7 @@ int main()
 
 
 	/*Heap*/
-	int* heap_value = new int; // Heap Allocation, o new faz a alocação da memória ser no Heap, malloc em C
+	int* heap_value = new int; // Heap Allocation, o new faz a alocaï¿½ï¿½o da memï¿½ria ser no Heap, malloc em C
 	*heap_value = 5;
 	int* heap_array = new int[5];
 	heap_array[0] = 1;
