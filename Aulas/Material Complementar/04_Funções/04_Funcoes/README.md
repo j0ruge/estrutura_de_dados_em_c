@@ -268,3 +268,8 @@ int main ( void )
 }
 
 ```
+
+A Figura 4.6 ilustra a execução deste programa mostrando o uso da memória. Assim,
+conseguimos o efeito desejado. Agora fica explicado por que passamos o endereço das
+variáveis para a função scanf, pois, caso contrário, a função não conseguiria devolver os
+valores lidos.
