@@ -180,7 +180,7 @@ TLC* insere_01(TLC* l, int x) {
 
 
 
-id imprime(TLC* l) {
+void imprime(TLC* l) {
 	if (l) {
 		printf("%d", l->prox);
 		TLC* p = l->prox;
