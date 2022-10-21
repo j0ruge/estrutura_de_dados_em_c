@@ -269,7 +269,25 @@ int main ( void )
 
 ```
 
-A Figura 4.6 ilustra a execução deste programa mostrando o uso da memória. Assim,
-conseguimos o efeito desejado. Agora fica explicado por que passamos o endereço das
-variáveis para a função scanf, pois, caso contrário, a função não conseguiria devolver os
-valores lidos.
+A Figura 4.6 ilustra a execução deste programa mostrando o uso da memória. Assim, conseguimos o efeito desejado. Agora fica explicado por que passamos o endereço das
+variáveis para a função scanf, pois, caso contrário, a função não conseguiria devolver os valores lidos.
+
+
+## 4.4. Recursividade
+
+As funções podem ser chamadas recursivamente, isto é, dentro do corpo de uma função podemos chamar novamente a própria função. Se uma função A chama a própria função A,
+dizemos que ocorre uma recursão direta. Se uma função A chama uma função B que, por sua vez, chama A, temos uma recursão indireta. Diversas implementações ficam muito mais
+fáceis usando recursividade. Por outro lado, implementações não recursivas tendem a ser mais eficientes.
+
+Para cada chamada de uma função, recursiva ou não, os parâmetros e as variáveis locais são empilhados na pilha de execução. Assim, mesmo quando uma função é chamada
+recursivamente, cria-se um ambiente local para cada chamada. As variáveis locais de chamadas recursivas são independentes entre si, como se estivéssemos chamando funções
+diferentes.
+
+As implementações recursivas devem ser pensadas considerando-se a definição recursiva do problema que desejamos resolver. Por exemplo, o valor do fatorial de um número pode
+ser definido de forma recursiva:
+
+Colocar LateX aqui
+
+Considerando a definição acima, fica muito simples pensar na implementação recursiva de uma função que calcula e retorna o fatorial de um número.
+
+
