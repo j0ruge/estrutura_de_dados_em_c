@@ -1,0 +1,9 @@
+﻿  vetor_estatico.c
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\TEMP\vetor_estatico.c(15,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\TEMP\vetor_estatico.c(99,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\TEMP\vetor_estatico.c(106,5): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\TEMP\vetor_estatico.c(122,4): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating code
+  Previous IOBJ not found, fall back to full compilation.
+i:\meu drive\pessoal\backup\pc_casa\documents\uva\estrutura de dados 1\estudos\temp\vetor_estatico.c : fatal error C1083: Cannot open compiler intermediate file: 'Release\TEMP.ipdb': Permission denied
+LINK : fatal error LNK1257: code generation failed

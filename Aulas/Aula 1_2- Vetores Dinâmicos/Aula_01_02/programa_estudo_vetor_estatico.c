@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-//#include <locale.h>
+#include <locale.h>
 #include <string.h>
 #include <math.h>
 #include <conio.h>
@@ -10,23 +10,31 @@
  */
 
 
- void informar_dados_vetor(int *vetor, int quantidade_elementos){
+ void informar_dados_vetor(int* vetor, int quantidade_elementos){
 	printf("\nTotal de elementos do vetor = %d", quantidade_elementos);
 
 	int indice;
 	for( indice=0; indice < quantidade_elementos; indice++ )
     {
 		printf("\nVET[%d] = ",indice);
-		scanf("%d",&vetor[indice]);
+		scanf_s("%d",&vetor[indice]);
 	};
-	getch();
+	return _getch();
 }
 
 
+ void imprimir_vetor(int* vetor, int qtd) {
+	 printf("\nTotal de elementos do vetor = %d", qtd);
+	 int i;
+	 for (i = 0; i < qtd; i++) {
+		 printf("\nVET[%d] = %d", i, vetor[i]);
+	 }
+	 return _getch();
+ }
 
 int main(int argc, char *argv[])
 {
-    //setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "Portuguese");
 
     int opcao;
 	int sair;
@@ -37,9 +45,9 @@ int main(int argc, char *argv[])
 	
 
 	//int qtd;
-	int elem;
+	//int elem;
 	
-	int *vet = NULL;
+	//int *vet = NULL;
 	
 	
 	do{		
@@ -53,49 +61,48 @@ int main(int argc, char *argv[])
 		printf("\n(7) Ordenar o vetor");		
 		printf("\n(8) Sair");
 		printf("\n\nDigite uma opcao: ");
-		scanf("%d",&opcao);
-		
+		scanf_s("%d",&opcao);		
 		switch(opcao){
 			case 1:				
 				do{					
 					system("cls");
 					printf("\nInforme a quantidade de elementos do vetor: ");
-					scanf("%d",&quantidade);					
+					scanf_s("%d",&quantidade);					
 				}while(quantidade < 0);
 				vetor = (int*) malloc(quantidade*sizeof(int)); 
-				getch();			
+				return _getch();
 				break;
 			case 2:
 				informar_dados_vetor(vetor/*referencia- o nome do vetor, por definição já é um ponteiro*/,
 				quantidade/*valor*/);
-				getch();
+				return _getch();
 				break;
 			case 3:
-				//imprimir_vetor(vet,qtd);
-				getch();
+				imprimir_vetor(vetor,quantidade);
+				return _getch();
 				break;
 			case 4:				
 				printf("\nInforme o numero a ser procurado: ");
-				scanf("%d",&elemento);				
-				//int ind = buscar_elemento(vet, qtd, elem);
-			//	if(ind != -1){
-			//		printf("Elemento encontrado na posicao %d",ind);					
-				//}else{
-			//		printf("Elemento nao encontrado no vetor!");
-			//	}
-				getch();					
+				scanf_s("%d",&elemento);				
+				int ind = buscar_elemento(vetor, quantidade, elemento);
+				if(ind != -1){
+					printf("Elemento encontrado na posicao %d",ind);					
+				}else{
+					printf("Elemento nao encontrado no vetor!");
+				}
+				return _getch();
 				break;
 
 			case 5:
-			//	printf("\nO maior elemento do vetor eh: %d",maior(vet,qtd));
-				getch();				
+				printf("\nO maior elemento do vetor eh: %d",maior(vetor,quantidade));
+				return _getch();
 				break;
 			case 6:
-			//	printf("\nO menor elemento do vetor eh: %d",menor(vet,qtd));
-				getch();				
+				printf("\nO menor elemento do vetor eh: %d",menor(vetor, quantidade));
+				return _getch();
 				break;
 			case 7:
-			//	bubble_sort (vet,qtd);
+				bubble_sort (vetor, quantidade);
 				break;
 			
 			case 8:
@@ -104,7 +111,7 @@ int main(int argc, char *argv[])
 				break;
 			default:
 				printf("Opcao Invalida!");
-				getch();
+				return _getch();
 				sair = 0;			
 		}
 	}while(!sair);
