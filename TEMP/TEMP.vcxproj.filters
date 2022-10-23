@@ -15,8 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="vetor_estatico.c">
+    <ClCompile Include="vetor_dinamico.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="data_structure_tools.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="data_structure_tools.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="vetor_estatico.c" />
+    <ClCompile Include="data_structure_tools.c" />
+    <ClCompile Include="vetor_dinamico.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="data_structure_tools.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
