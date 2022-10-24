@@ -1,0 +1,18 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Aula_03_04_Struct_v3.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  programa_struct_v4.c
+G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v4.c(40,9): warning C4101: 'qtd_alunos': unreferenced local variable
+G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v4.c(61,27): warning C4028: formal parameter 1 different from declaration
+G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v4.c(156,26): warning C4305: '=': truncation from 'double' to 'float'
+G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v4.c(164,26): warning C4305: '=': truncation from 'double' to 'float'
+G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v4.c(170,26): warning C4305: '=': truncation from 'double' to 'float'
+G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v4.c(184,26): warning C4305: '=': truncation from 'double' to 'float'
+G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v4.c(191,26): warning C4305: '=': truncation from 'double' to 'float'
+G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v4.c(192,26): warning C4305: '=': truncation from 'double' to 'float'
+G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v4.c(197,26): warning C4305: '=': truncation from 'double' to 'float'
+G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v4.c(198,26): warning C4305: '=': truncation from 'double' to 'float'
+G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v4.c(211,26): warning C4305: '=': truncation from 'double' to 'float'
+G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v4.c(212,26): warning C4305: '=': truncation from 'double' to 'float'
+G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v4.c(220,26): warning C4305: '=': truncation from 'double' to 'float'
+G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v4.c(147,9): warning C4101: 'indice': unreferenced local variable
+G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v4.c(144): warning C4715: 'comparar_aluno_media_matricula': not all control paths return a value
+  modelo.vcxproj -> G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Estudos\Debug\Aula_03_04_Struct_v4.exe
