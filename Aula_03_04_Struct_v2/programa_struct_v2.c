@@ -1,11 +1,11 @@
 /* ********************************************************************* */
-/* Disciplina: ProgramaÁ„o Estruturada - UVA                             */
-/* Professor: AndrÈ Lucio                                                */
+/* Disciplina: Programa√ß√£o Estruturada - UVA                             */
+/* Professor: Andr√© Lucio                                                */
 /* Objetivo de Programa: Inserir os dados de um aluno em um struct alo-  */
-/*                       cado estaticamente. A inserÁ„o dos dados do alu-*/
-/*                       ser· feita com um procedimento (passagem de     */
-/*                       par‚metro do struc por referÍncia               */
-/* TÛpico da Disciplinas Revis„o do uso de Ponteiros                     */
+/*                       cado estaticamente. A inser√ß√£o dos dados do alu-*/
+/*                       ser√° feita com um procedimento (passagem de     */
+/*                       par√¢metro do struc por refer√™ncia               */
+/* T√≥pico da Disciplinas Revis√£o do uso de Ponteiros                     */
 /* ********************************************************************* */
 
 #include <stdio.h>
@@ -17,7 +17,7 @@ typedef struct aluno {
     float A1, A2, A3;
     float media;
 }Aluno, * PAluno;
-/* Com o uso do typedef uma vari·vel do tipo "struct aluno" pode ser declarada
+/* Com o uso do typedef uma vari√°vel do tipo "struct aluno" pode ser declarada
  apenas como "Aluno" e um ponteiro para esta estrutura como "PAluno"*/
 
 void incluir_aluno(PAluno a);
@@ -26,7 +26,7 @@ int main(int argc, char* argv[]) {
     setlocale(LC_ALL, "Portuguese");
 
 
-    Aluno aluno_exemplo; // a vari·vel "a" foi declarada j· usando a redefiniÁ„o de tipo
+    Aluno aluno_exemplo; // a vari√°vel "a" foi declarada j√° usando a redefini√ß√£o de tipo
 
     incluir_aluno(&aluno_exemplo);
 
@@ -40,11 +40,11 @@ int main(int argc, char* argv[]) {
 
 void incluir_aluno(PAluno aluno)
 {
-    /* Repare que no main o struct foi passado por referÍncia na chamada a deste
-    procedimento. Sendo assim, o que chega como par‚metro n„o È uma cÛpia do
-    struct, mas o endereÁo para o inÌcio dele na memÛria. O "C" oferece a seta
+    /* Repare que no main o struct foi passado por refer√™ncia na chamada a deste
+    procedimento. Sendo assim, o que chega como par√¢metro n√£o √© uma c√≥pia do
+    struct, mas o endere√ßo para o in√≠cio dele na mem√≥ria. O "C" oferece a seta
     -> para acessarmos o dados do struct a partir do seu ponteiro. Isto facilita
-    pois o programador n„o precisa escrever, por exemplo, (*a).V1, pois isso equi
+    pois o programador n√£o precisa escrever, por exemplo, (*a).V1, pois isso equi
     vale a a->V1                   */
 
     printf("Informe o nome do Aluno: ");
@@ -56,9 +56,9 @@ void incluir_aluno(PAluno aluno)
     printf("Informe a nota do A3: ");
     scanf_s("%f", &aluno->A3);
 
-    /*O & foi usado, pois a funÁ„o "scanf" necessita saber o endereÁo da vari·vel.
-    No caso do nome n„o foi necess·rio, pois em C um String È tratado como um vetor
-    de caracteres e o nome dado a um vetor sempre representa o endereÁo
-    da sua primeira posiÁ„o.*/
+    /*O & foi usado, pois a fun√ß√£o "scanf" necessita saber o endere√ßo da vari√°vel.
+    No caso do nome n√£o foi necess√°rio, pois em C um String √© tratado como um vetor
+    de caracteres e o nome dado a um vetor sempre representa o endere√ßo
+    da sua primeira posi√ß√£o.*/
 
 }
