@@ -1,0 +1,8 @@
+﻿  programa_struct_v1.c
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Structs\programa_struct_v1.c(29,33): warning C4474: 'scanf_s' : too many arguments passed for format string
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Structs\programa_struct_v1.c(29,33): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Structs\programa_struct_v1.c(31,33): warning C4474: 'scanf_s' : too many arguments passed for format string
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Structs\programa_struct_v1.c(31,33): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Structs\programa_struct_v1.c(33,33): warning C4474: 'scanf_s' : too many arguments passed for format string
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Structs\programa_struct_v1.c(33,33): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+  Aula_03_04_Structs.vcxproj -> I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Estudos\Debug\Aula_03_04_Structs.exe

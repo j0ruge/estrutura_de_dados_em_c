@@ -46,4 +46,23 @@ quantidade_elementos, dentro da função é um ponteiro e esta alocada na memór
 
 teste realloc
 
-0x00EFF828 <- vetor_dinamico = 0x014AF2B8 
+0x00EFF828 <- vetor_dinamico = 0x014AF2B8  {2015}
+
+/* Após o REALLOC */
+
+
+
+0x00EFF828 <- vetor_dinamico = 0x014acd40  {2015}
+
+
+0x00bcd240 antigo
+
+
+0x00BD2BB0 novo 
+
+
+## STRUCTS
+
+0x010FFB00 <- aluno_01
+
+Ocompiladior marca a reserva como ccccc, depois de preenchido os bytes não populados do tamanho da string, são preenchidos com fefefefe
