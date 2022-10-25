@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\modelo_visual_studio\programa_struct_v6.c">
+    <ClCompile Include="programa_struct_v6.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

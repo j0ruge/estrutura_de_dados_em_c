@@ -87,8 +87,7 @@ PPAluno incluir_aluno(int num_alunos) {
     return ptr_ptr_aluno;
 }
 
-PPAluno mock_testes() {
-    int indice;
+PPAluno mock_testes() {    
     PPAluno ptr_ptr_aluno;
     //alocar o vetor de estruturas
     ptr_ptr_aluno = (PPAluno)malloc(10 * sizeof(PAluno));
@@ -97,7 +96,7 @@ PPAluno mock_testes() {
     inicializa_vetor(10, ptr_ptr_aluno);
     ptr_ptr_aluno[0] = (PAluno)malloc(sizeof(Aluno));
     ptr_ptr_aluno[0]->matricula = 44;
-    strcpy_s(ptr_ptr_aluno[0]->nome, "Andre Lucio", (sizeof(char)*40));
+    strcpy_s(ptr_ptr_aluno[0]->nome, sizeof(ptr_ptr_aluno[0]->nome), "Andre Lucio");
     ptr_ptr_aluno[0]->A1 = 8.0;
     ptr_ptr_aluno[0]->A2 = 7.3;
     ptr_ptr_aluno[0]->A3 = 6.0;
@@ -105,7 +104,7 @@ PPAluno mock_testes() {
 
     ptr_ptr_aluno[1] = (PAluno)malloc(sizeof(Aluno));
     ptr_ptr_aluno[1]->matricula = 10;
-    strcpy_s(ptr_ptr_aluno[1]->nome, "Joao Pedro", sizeof(ptr_ptr_aluno[0]->nome));
+    strcpy_s(ptr_ptr_aluno[1]->nome, sizeof(ptr_ptr_aluno[0]->nome), "Joao Pedro");
     ptr_ptr_aluno[1]->A1 = 5.0;
     ptr_ptr_aluno[1]->A2 = 7.0;
     ptr_ptr_aluno[1]->A3 = 6.2;
@@ -113,7 +112,7 @@ PPAluno mock_testes() {
 
     ptr_ptr_aluno[2] = (PAluno)malloc(sizeof(Aluno));
     ptr_ptr_aluno[2]->matricula = 5;
-    strcpy_s(ptr_ptr_aluno[2]->nome, "Joana Josefa", sizeof(ptr_ptr_aluno[0]->nome));
+    strcpy_s(ptr_ptr_aluno[2]->nome, sizeof(ptr_ptr_aluno[0]->nome), "Joana Josefa");
     ptr_ptr_aluno[2]->A1 = 5.0;
     ptr_ptr_aluno[2]->A2 = 7.9;
     ptr_ptr_aluno[2]->A3 = 6.0;
@@ -121,7 +120,7 @@ PPAluno mock_testes() {
 
     ptr_ptr_aluno[3] = (PAluno)malloc(sizeof(Aluno));
     ptr_ptr_aluno[3]->matricula = 22;
-    strcpy_s(ptr_ptr_aluno[3]->nome, "Alana Souza", sizeof(ptr_ptr_aluno[0]->nome));
+    strcpy_s(ptr_ptr_aluno[3]->nome, sizeof(ptr_ptr_aluno[0]->nome), "Alana Souza");
     ptr_ptr_aluno[3]->A1 = 5.0;
     ptr_ptr_aluno[3]->A2 = 7.0;
     ptr_ptr_aluno[3]->A3 = 6.0;
@@ -129,7 +128,7 @@ PPAluno mock_testes() {
 
     ptr_ptr_aluno[4] = (PAluno)malloc(sizeof(Aluno));
     ptr_ptr_aluno[4]->matricula = 23;
-    strcpy_s(ptr_ptr_aluno[4]->nome, "Tamiris Vespucia", sizeof(ptr_ptr_aluno[0]->nome));
+    strcpy_s(ptr_ptr_aluno[4]->nome, sizeof(ptr_ptr_aluno[0]->nome), "Tamiris Vespucia");
     ptr_ptr_aluno[4]->A1 = 5.0;
     ptr_ptr_aluno[4]->A2 = 7.4;
     ptr_ptr_aluno[4]->A3 = 6.0;
@@ -137,7 +136,7 @@ PPAluno mock_testes() {
 
     ptr_ptr_aluno[5] = (PAluno)malloc(sizeof(Aluno));
     ptr_ptr_aluno[5]->matricula = 9;
-    strcpy_s(ptr_ptr_aluno[5]->nome, "Carol Villar", sizeof(ptr_ptr_aluno[0]->nome));
+    strcpy_s(ptr_ptr_aluno[5]->nome, sizeof(ptr_ptr_aluno[0]->nome), "Carol Villar");
     ptr_ptr_aluno[5]->A1 = 5.0;
     ptr_ptr_aluno[5]->A2 = 7.6;
     ptr_ptr_aluno[5]->A3 = 6.4;
@@ -145,7 +144,7 @@ PPAluno mock_testes() {
 
     ptr_ptr_aluno[6] = (PAluno)malloc(sizeof(Aluno));
     ptr_ptr_aluno[6]->matricula = 111;
-    strcpy_s(ptr_ptr_aluno[6]->nome, "Shirley Mendonca", sizeof(ptr_ptr_aluno[0]->nome));
+    strcpy_s(ptr_ptr_aluno[6]->nome, sizeof(ptr_ptr_aluno[0]->nome), "Shirley Mendonca");
     ptr_ptr_aluno[6]->A1 = 5.6;
     ptr_ptr_aluno[6]->A2 = 7.2;
     ptr_ptr_aluno[6]->A3 = 6.0;
@@ -153,7 +152,7 @@ PPAluno mock_testes() {
 
     ptr_ptr_aluno[7] = (PAluno)malloc(sizeof(Aluno));
     ptr_ptr_aluno[7]->matricula = 33;
-    strcpy_s(ptr_ptr_aluno[7]->nome, "Carlos Souza", sizeof(ptr_ptr_aluno[0]->nome));
+    strcpy_s(ptr_ptr_aluno[7]->nome, sizeof(ptr_ptr_aluno[0]->nome), "Carlos Souza");
     ptr_ptr_aluno[7]->A1 = 5.0;
     ptr_ptr_aluno[7]->A2 = 7.0;
     ptr_ptr_aluno[7]->A3 = 6.0;
@@ -161,7 +160,7 @@ PPAluno mock_testes() {
 
     ptr_ptr_aluno[8] = (PAluno)malloc(sizeof(Aluno));
     ptr_ptr_aluno[8]->matricula = 123;
-    strcpy_s(ptr_ptr_aluno[8]->nome, "Beatriz Maria", sizeof(ptr_ptr_aluno[0]->nome));
+    strcpy_s(ptr_ptr_aluno[8]->nome, sizeof(ptr_ptr_aluno[0]->nome), "Beatriz Maria");
     ptr_ptr_aluno[8]->A1 = 5.6;
     ptr_ptr_aluno[8]->A2 = 7.2;
     ptr_ptr_aluno[8]->A3 = 6.0;
@@ -169,7 +168,7 @@ PPAluno mock_testes() {
 
     ptr_ptr_aluno[9] = (PAluno)malloc(sizeof(Aluno));
     ptr_ptr_aluno[9]->matricula = 2;
-    strcpy_s(ptr_ptr_aluno[9]->nome, "Ana de Souza", sizeof(ptr_ptr_aluno[0]->nome));
+    strcpy_s(ptr_ptr_aluno[9]->nome, sizeof(ptr_ptr_aluno[0]->nome), "Ana de Souza");
     ptr_ptr_aluno[9]->A1 = 5.0;
     ptr_ptr_aluno[9]->A2 = 7.0;
     ptr_ptr_aluno[9]->A3 = 6.2;

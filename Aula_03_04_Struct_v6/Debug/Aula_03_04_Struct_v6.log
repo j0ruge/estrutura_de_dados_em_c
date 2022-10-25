@@ -1,56 +1,15 @@
 ﻿  programa_struct_v6.c
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(37,9): warning C4101: 'qtd_alunos': unreferenced local variable
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(101,51): warning C4047: 'function': 'rsize_t' differs in levels of indirection from 'char [12]'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(101,38): warning C4024: 'strcpy_s': different types for formal and actual parameter 2
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(101,70): warning C4047: 'function': 'const char *' differs in levels of indirection from 'unsigned int'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(101,66): warning C4024: 'strcpy_s': different types for formal and actual parameter 3
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(103,31): warning C4305: '=': truncation from 'double' to 'float'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(109,50): warning C4047: 'function': 'rsize_t' differs in levels of indirection from 'char [11]'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(109,38): warning C4024: 'strcpy_s': different types for formal and actual parameter 2
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(109,82): warning C4047: 'function': 'const char *' differs in levels of indirection from 'unsigned int'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(109,52): warning C4024: 'strcpy_s': different types for formal and actual parameter 3
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(112,31): warning C4305: '=': truncation from 'double' to 'float'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(117,52): warning C4047: 'function': 'rsize_t' differs in levels of indirection from 'char [13]'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(117,38): warning C4024: 'strcpy_s': different types for formal and actual parameter 2
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(117,84): warning C4047: 'function': 'const char *' differs in levels of indirection from 'unsigned int'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(117,54): warning C4024: 'strcpy_s': different types for formal and actual parameter 3
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(119,31): warning C4305: '=': truncation from 'double' to 'float'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(125,51): warning C4047: 'function': 'rsize_t' differs in levels of indirection from 'char [12]'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(125,38): warning C4024: 'strcpy_s': different types for formal and actual parameter 2
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(125,83): warning C4047: 'function': 'const char *' differs in levels of indirection from 'unsigned int'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(125,53): warning C4024: 'strcpy_s': different types for formal and actual parameter 3
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(133,56): warning C4047: 'function': 'rsize_t' differs in levels of indirection from 'char [17]'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(133,38): warning C4024: 'strcpy_s': different types for formal and actual parameter 2
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(133,88): warning C4047: 'function': 'const char *' differs in levels of indirection from 'unsigned int'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(133,58): warning C4024: 'strcpy_s': different types for formal and actual parameter 3
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(135,31): warning C4305: '=': truncation from 'double' to 'float'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(141,52): warning C4047: 'function': 'rsize_t' differs in levels of indirection from 'char [13]'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(141,38): warning C4024: 'strcpy_s': different types for formal and actual parameter 2
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(141,84): warning C4047: 'function': 'const char *' differs in levels of indirection from 'unsigned int'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(141,54): warning C4024: 'strcpy_s': different types for formal and actual parameter 3
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(143,31): warning C4305: '=': truncation from 'double' to 'float'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(144,31): warning C4305: '=': truncation from 'double' to 'float'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(149,56): warning C4047: 'function': 'rsize_t' differs in levels of indirection from 'char [17]'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(149,38): warning C4024: 'strcpy_s': different types for formal and actual parameter 2
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(149,88): warning C4047: 'function': 'const char *' differs in levels of indirection from 'unsigned int'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(149,58): warning C4024: 'strcpy_s': different types for formal and actual parameter 3
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(150,31): warning C4305: '=': truncation from 'double' to 'float'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(151,31): warning C4305: '=': truncation from 'double' to 'float'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(157,52): warning C4047: 'function': 'rsize_t' differs in levels of indirection from 'char [13]'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(157,38): warning C4024: 'strcpy_s': different types for formal and actual parameter 2
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(157,84): warning C4047: 'function': 'const char *' differs in levels of indirection from 'unsigned int'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(157,54): warning C4024: 'strcpy_s': different types for formal and actual parameter 3
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(165,53): warning C4047: 'function': 'rsize_t' differs in levels of indirection from 'char [14]'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(165,38): warning C4024: 'strcpy_s': different types for formal and actual parameter 2
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(165,85): warning C4047: 'function': 'const char *' differs in levels of indirection from 'unsigned int'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(165,55): warning C4024: 'strcpy_s': different types for formal and actual parameter 3
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(166,31): warning C4305: '=': truncation from 'double' to 'float'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(167,31): warning C4305: '=': truncation from 'double' to 'float'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(173,52): warning C4047: 'function': 'rsize_t' differs in levels of indirection from 'char [13]'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(173,38): warning C4024: 'strcpy_s': different types for formal and actual parameter 2
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(173,84): warning C4047: 'function': 'const char *' differs in levels of indirection from 'unsigned int'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(173,54): warning C4024: 'strcpy_s': different types for formal and actual parameter 3
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(176,31): warning C4305: '=': truncation from 'double' to 'float'
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(92,9): warning C4101: 'indice': unreferenced local variable
-G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\modelo_visual_studio\programa_struct_v6.c(237): warning C4715: 'comparar_aluno_media_matricula': not all control paths return a value
-  Aula_03_04_Struct_v6.vcxproj -> G:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Estudos\Debug\Aula_03_04_Struct_v6.exe
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Struct_v6\programa_struct_v6.c(36,9): warning C4101: 'qtd_alunos': unreferenced local variable
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Struct_v6\programa_struct_v6.c(101,31): warning C4305: '=': truncation from 'double' to 'float'
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Struct_v6\programa_struct_v6.c(110,31): warning C4305: '=': truncation from 'double' to 'float'
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Struct_v6\programa_struct_v6.c(117,31): warning C4305: '=': truncation from 'double' to 'float'
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Struct_v6\programa_struct_v6.c(133,31): warning C4305: '=': truncation from 'double' to 'float'
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Struct_v6\programa_struct_v6.c(141,31): warning C4305: '=': truncation from 'double' to 'float'
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Struct_v6\programa_struct_v6.c(142,31): warning C4305: '=': truncation from 'double' to 'float'
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Struct_v6\programa_struct_v6.c(148,31): warning C4305: '=': truncation from 'double' to 'float'
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Struct_v6\programa_struct_v6.c(149,31): warning C4305: '=': truncation from 'double' to 'float'
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Struct_v6\programa_struct_v6.c(164,31): warning C4305: '=': truncation from 'double' to 'float'
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Struct_v6\programa_struct_v6.c(165,31): warning C4305: '=': truncation from 'double' to 'float'
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Struct_v6\programa_struct_v6.c(174,31): warning C4305: '=': truncation from 'double' to 'float'
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aula_03_04_Struct_v6\programa_struct_v6.c(235): warning C4715: 'comparar_aluno_media_matricula': not all control paths return a value
+  Aula_03_04_Struct_v6.vcxproj -> I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Estudos\Debug\Aula_03_04_Struct_v6.exe
