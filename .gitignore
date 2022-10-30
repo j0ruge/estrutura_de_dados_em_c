@@ -1,3 +1,8 @@
 # User-specific files
 *.o
 *.exe
+
+#Visual Studio Folders
+x64\
+Debug\
+Release\

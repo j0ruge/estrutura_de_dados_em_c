@@ -1,9 +1,0 @@
-﻿  HelloGabiruC.c
-I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Estudos\HelloGabiruC.c(8,9): warning C4477: 'printf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'int *'
-I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Estudos\HelloGabiruC.c(8,9): warning C4313: 'printf': '%x' in format string conflicts with argument 1 of type 'int *'
-I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Estudos\HelloGabiruC.c(10,2): warning C4013: 'system' undefined; assuming extern returning int
-I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Estudos\HelloGabiruC.c(6,7): warning C4101: 'pa': unreferenced local variable
-  Generating code
-  Previous IPDB not found, fall back to full compilation.
-i:\meu drive\pessoal\backup\pc_casa\documents\uva\estrutura de dados 1\estudos\estudos\hellogabiruc.c : fatal error C1083: Cannot open compiler intermediate file: 'x64\Release\Estudos.ipdb': Permission denied
-LINK : fatal error LNK1257: code generation failed
