@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "data_structure_tools.h"
-const int NOT_FOUND = -1;
 
 
 void imprimir_vetor(int* vetor_estatico, int quantidade_total_elementos) {
@@ -62,4 +61,29 @@ void bubble_sort(int* vetor, int quantidade_elementos) {
 			}
 		}
 	}
+}
+
+int binarySearch(int array[], int target_element, int array_size) {
+	int array_begin_position = 0;
+	int array_end_position = array_size - 1;
+	int media = 0;
+	int guess_index_position = 0;
+
+	while (array_begin_position <= array_end_position)
+	{
+		media = (array_begin_position + array_end_position) / 2;
+		guess_index_position = media;
+
+		if (array[guess_index_position] == target_element)
+		{
+			return guess_index_position;
+		}
+		if (array[guess_index_position] < target_element) {
+			array_begin_position = guess_index_position + 1;
+		}
+		else {
+			array_end_position = guess_index_position - 1;
+		}
+	}
+	return NOT_FOUND;
 }

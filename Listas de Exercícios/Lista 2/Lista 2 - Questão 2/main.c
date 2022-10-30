@@ -4,7 +4,7 @@
 #include <string.h>
 #include <math.h>
 #include "..\..\Tools\data_structure_tools.h"
-#define NOT_FOUND -1
+
 
 #define FATOR_REALLOC 2
 
@@ -39,7 +39,8 @@ int main(int argc, char* argv[]) {
 		printf("\n(4) Buscar o maior elemento do vetor");
 		printf("\n(5) Buscar o menor elemento do vetor");
 		printf("\n(6) Ordenar o vetor");
-		printf("\n(7) Sair");
+		printf("\n(7) Realizar busca binária");
+		printf("\n(8) Sair");
 		printf("\n\nDigite uma opcao: ");
 		scanf_s("%d", &opcao);
 
@@ -82,8 +83,19 @@ int main(int argc, char* argv[]) {
 		case 6:
 			bubble_sort(vetor_dinamico, quantidade_elementos);
 			break;
-
 		case 7:
+			printf("\nInforme o numero a ser procurado: ");
+			scanf_s("%d", &elemento);
+			indice = binarySearch(vetor_dinamico, elemento, quantidade_elementos);
+			if (indice != NOT_FOUND) {
+				printf("Elemento encontrado na posicão %d", indice);
+			}
+			else {
+				printf("Elemento nao encontrado no vetor!");
+			}
+			__GETCHAR__;
+			break;
+		case 8:
 			printf("Sair");
 			sair = 1;
 			break;
