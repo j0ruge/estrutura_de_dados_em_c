@@ -1,0 +1,7 @@
+﻿  main.c
+main.obj : error LNK2019: unresolved external symbol _imprimir_vetor referenced in function _main
+main.obj : error LNK2019: unresolved external symbol _buscar_elemento referenced in function _main
+main.obj : error LNK2019: unresolved external symbol _buscar_maior_elemento referenced in function _main
+main.obj : error LNK2019: unresolved external symbol _buscar_menor_elemento referenced in function _main
+main.obj : error LNK2019: unresolved external symbol _bubble_sort referenced in function _main
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Aulas\Aula 1_2- Vetores Dinâmicos\Debug\Vetor Dinâmico.exe : fatal error LNK1120: 5 unresolved externals
