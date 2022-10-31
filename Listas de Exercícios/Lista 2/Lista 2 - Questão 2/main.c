@@ -5,19 +5,7 @@
 #include <math.h>
 #include "..\..\Tools\data_structure_tools.h"
 
-#define FATOR_REALLOC 2
-
 /*OBJETIVO: Vetor Dinâmico*/
-
-
-int vetor_vazio(int* vetor);
-int* incluir_valor(int* vetor_dinamico, int valor, int* quantidade_elementos, int* quantidade_total_elementos);
-
-
-void informar_dados_vetor(int* vetor_estatico, int quantidade_elementos);
-
-
-void bubble_sort_v2(int* vetor_estatico, int quantidade_elementos);
 
 int main(int argc, char* argv[]) {
 	setlocale(LC_ALL, "Portuguese");
@@ -120,32 +108,3 @@ int main(int argc, char* argv[]) {
 
 	return EXIT_SUCCESS;
 };
-
-int vetor_vazio(int* vetor) {
-	return vetor == NULL;
-}
-
-int* incluir_valor(int* vetor_dinamico, int valor, int* quantidade_elementos, int* quantidade_total_elementos) {
-	if (vetor_vazio(vetor_dinamico)) //ou poderia ser if(qtd==0) ou if(!qtd)
-	{
-		printf("\nO vetor estava vazio - primeira alocação!");
-		vetor_dinamico = (int*)malloc(FATOR_REALLOC * sizeof(int));
-		if (!vetor_dinamico) { //não conseguiu espaço em memória
-			return NULL;
-		}
-		*quantidade_total_elementos = 2;
-		*quantidade_elementos = 0;
-	}
-	if (*quantidade_elementos == *quantidade_total_elementos) { //meu vetor está cheio
-		printf("\nO vetor precisa de realocação!");
-		vetor_dinamico = (int*)realloc(vetor_dinamico, (*quantidade_total_elementos * FATOR_REALLOC) * sizeof(int));
-		if (!vetor_dinamico) { //não conseguiu espaço em memória
-			return NULL;
-		}
-		*quantidade_total_elementos = *quantidade_total_elementos * 2;
-	}
-	vetor_dinamico[*quantidade_elementos] = valor;
-	*quantidade_elementos = *quantidade_elementos + 1;
-	getchar();
-	return vetor_dinamico;
-}

@@ -2,6 +2,57 @@
 #include "data_structure_tools.h"
 
 
+int vetor_vazio(int* vetor) {
+	return vetor == NULL;
+}
+
+int* incluir_valor(int* vetor_dinamico, int valor, int* quantidade_elementos, int* quantidade_total_elementos) {
+	if (vetor_vazio(vetor_dinamico)) //ou poderia ser if(qtd==0) ou if(!qtd)
+	{
+		printf("\nO vetor estava vazio - primeira alocação!");
+		vetor_dinamico = (int*)malloc(FATOR_REALLOC * sizeof(int));
+		if (!vetor_dinamico) { //não conseguiu espaço em memória
+			return NULL;
+		}
+		*quantidade_total_elementos = 2;
+		*quantidade_elementos = 0;
+	}
+	int excluded_value_index = findFirstVectorExcludedValue(vetor_dinamico, *quantidade_elementos);
+	if (*quantidade_elementos == *quantidade_total_elementos && excluded_value_index == NOT_FOUND) { //meu vetor está cheio
+		printf("\nO vetor precisa de realocação!");
+		vetor_dinamico = (int*)realloc(vetor_dinamico, (*quantidade_total_elementos * FATOR_REALLOC) * sizeof(int));
+		if (!vetor_dinamico) { //não conseguiu espaço em memória
+			return NULL;
+		}
+		*quantidade_total_elementos = *quantidade_total_elementos * FATOR_REALLOC;
+	}
+	if (excluded_value_index != NOT_FOUND) {
+		vetor_dinamico[excluded_value_index] = valor;
+	}
+	else {
+		vetor_dinamico[*quantidade_elementos] = valor;
+		*quantidade_elementos = *quantidade_elementos + 1;
+	}
+	return vetor_dinamico;
+}
+
+int findFirstVectorExcludedValue(int* vetor, int quantidade_elementos) {
+	if (quantidade_elementos == 0) {
+		return NOT_FOUND;
+	}
+	int const ELEMENTO_EXCLUIDO = -1;
+	int index;
+	for (index = 0; index < quantidade_elementos; index++) {
+		if (vetor[index] == ELEMENTO_EXCLUIDO) {
+			return index;
+			break;
+		}
+	}
+	return NOT_FOUND;
+};
+
+
+
 void imprimir_vetor(int* vetor_estatico, int quantidade_total_elementos) {
 	printf("\nTotal de elementos do vetor = %d", quantidade_total_elementos);
 	int indice;

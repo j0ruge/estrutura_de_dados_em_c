@@ -1,6 +1,11 @@
 ﻿#define __GETCHAR__ if (getchar()=='\n') (void*) getchar();
 #define NOT_FOUND -1
+#define FATOR_REALLOC 2
 
+
+
+int vetor_vazio(int* vetor);
+int* incluir_valor(int* vetor_dinamico, int valor, int* quantidade_elementos, int* quantidade_total_elementos);
 void imprimir_vetor(int* vetor, int quantidade_elementos);
 int buscar_elemento(int* vetor, int quantidade_elementos, int elemento);
 int exluir_elemento(int* vetor, int quantidade_elementos, int elemento);
