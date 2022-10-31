@@ -5,7 +5,6 @@
 #include <math.h>
 #include "..\..\Tools\data_structure_tools.h"
 
-
 #define FATOR_REALLOC 2
 
 /*OBJETIVO: Vetor Dinâmico*/
@@ -39,8 +38,9 @@ int main(int argc, char* argv[]) {
 		printf("\n(4) Buscar o maior elemento do vetor");
 		printf("\n(5) Buscar o menor elemento do vetor");
 		printf("\n(6) Ordenar o vetor");
-		printf("\n(7) Realizar busca binária");
-		printf("\n(8) Sair");
+		printf("\n(7) Realizar busca binária (Ordenar Primeiro)");
+		printf("\n(8) Excluir número");
+		printf("\n(9) Sair");
 		printf("\n\nDigite uma opcao: ");
 		scanf_s("%d", &opcao);
 
@@ -73,11 +73,11 @@ int main(int argc, char* argv[]) {
 			break;
 
 		case 4:
-			printf("\nO maior elemento do vetor eh: %d", buscar_maior_elemento(vetor_dinamico, quantidade_elementos));
+			printf("\nO maior elemento do vetor é: %d", buscar_maior_elemento(vetor_dinamico, quantidade_elementos));
 			__GETCHAR__;
 			break;
 		case 5:
-			printf("\nO menor elemento do vetor eh: %d", buscar_menor_elemento(vetor_dinamico, quantidade_elementos));
+			printf("\nO menor elemento do vetor é: %d", buscar_menor_elemento(vetor_dinamico, quantidade_elementos));
 			__GETCHAR__;
 			break;
 		case 6:
@@ -96,6 +96,18 @@ int main(int argc, char* argv[]) {
 			__GETCHAR__;
 			break;
 		case 8:
+			printf("\nInforme o numero a ser EXCLUÍDO: ");
+			scanf_s("%d", &elemento);
+			indice = exluir_elemento(vetor_dinamico, quantidade_elementos, elemento);
+			if (indice != NOT_FOUND) {
+				printf("A última posição que o elemento foi encontrado: %d", indice);
+			}
+			else {
+				printf("Elemento nao encontrado no vetor!");
+			}
+			__GETCHAR__;
+			break;
+		case 9:
 			printf("Sair");
 			sair = 1;
 			break;

@@ -1,0 +1,5 @@
+﻿  data_structure_tools.c
+I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Listas de Exercícios\Tools\data_structure_tools.c(60,11): warning C4013: 'findFirstVectorValidValue' undefined; assuming extern returning int
+  main.c
+  Generating Code...
+  Lista 2 - Questão 2.vcxproj -> I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Listas de Exercícios\Lista 2\Debug\Lista 2 - Questão 2.exe

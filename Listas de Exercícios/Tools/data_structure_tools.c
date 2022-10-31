@@ -27,6 +27,20 @@ int buscar_elemento(int* vetor, int quantidade_elementos, int elemento) {
 	return NOT_FOUND;
 }
 
+int exluir_elemento(int* vetor, int quantidade_elementos, int elemento) {
+	int indice;
+	int ultimo_indice_exluido;
+	int ELEMENTO_EXCLUIDO = -1;
+	for (indice = 0; indice < quantidade_elementos; indice++) {
+		if (vetor[indice] == elemento) {
+			vetor[indice] = ELEMENTO_EXCLUIDO;
+			ultimo_indice_exluido = indice;
+			return ultimo_indice_exluido;
+		}
+	}
+	return NOT_FOUND;
+}
+
 int buscar_maior_elemento(int* vetor, int quantidade_elementos) {
 	int maior_elemento = vetor[0];
 	int indice;
@@ -37,18 +51,39 @@ int buscar_maior_elemento(int* vetor, int quantidade_elementos) {
 	}
 	return maior_elemento;
 }
+
+
 int buscar_menor_elemento(int* vetor, int quantidade_elementos) {
-	int menor_elemento = vetor[0];
-	int indice;
-	for (indice = 1; indice < quantidade_elementos; indice++) {
-		if (vetor[indice] < menor_elemento) {
+	int menor_elemento = 0;
+	int const ELEMENTO_EXCLUIDO = -1;
+	int indice = 0;
+	indice = findFirstVectorValidValue(vetor, quantidade_elementos, indice, &menor_elemento, ELEMENTO_EXCLUIDO);
+
+	for (indice; indice < quantidade_elementos; indice++) {
+		if (vetor[indice] < menor_elemento && (vetor[indice] > ELEMENTO_EXCLUIDO)) {
 			menor_elemento = vetor[indice];
 		}
 	}
 	return menor_elemento;
 }
 
-/*TERMINAR DE REFATORAR*/
+int findFirstVectorValidValue(int* vetor, int quantidade_elementos, int indice, int* menor_elemento, int const ELEMENTO_EXCLUIDO) {
+	if (vetor[0] == ELEMENTO_EXCLUIDO) {
+		for (indice = 1; indice < quantidade_elementos; indice++) {
+			if (vetor[indice] > ELEMENTO_EXCLUIDO) {
+				*menor_elemento = vetor[indice];
+				break;
+			}
+		}
+	}
+	else
+	{
+		*menor_elemento = vetor[0];
+	}
+	return ++indice;
+};
+
+/*TERMINAR DE REFATORAR A VERSÃO DO PROFESSOR ANDRÉ*/
 void bubble_sort(int* vetor, int quantidade_elementos) {
 	int i, j, aux;
 
