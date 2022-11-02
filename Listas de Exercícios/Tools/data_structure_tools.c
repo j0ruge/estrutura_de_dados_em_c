@@ -9,19 +9,19 @@ int vetor_vazio(int* vetor) {
 int* incluir_valor(int* vetor_dinamico, int valor, int* quantidade_elementos, int* quantidade_total_elementos) {
 	if (vetor_vazio(vetor_dinamico)) //ou poderia ser if(qtd==0) ou if(!qtd)
 	{
-		printf("\nO vetor estava vazio - primeira alocaÁ„o!");
+		printf("\nO vetor estava vazio - primeira aloca√ß√£o!");
 		vetor_dinamico = (int*)malloc(FATOR_REALLOC * sizeof(int));
-		if (!vetor_dinamico) { //n„o conseguiu espaÁo em memÛria
+		if (!vetor_dinamico) { //n√£o conseguiu espa√ßo em mem√≥ria
 			return NULL;
 		}
 		*quantidade_total_elementos = 2;
 		*quantidade_elementos = 0;
 	}
 	int excluded_value_index = findFirstVectorExcludedValue(vetor_dinamico, *quantidade_elementos);
-	if (*quantidade_elementos == *quantidade_total_elementos && excluded_value_index == NOT_FOUND) { //meu vetor est· cheio
-		printf("\nO vetor precisa de realocaÁ„o!");
+	if (*quantidade_elementos == *quantidade_total_elementos && excluded_value_index == NOT_FOUND) { //meu vetor est√° cheio
+		printf("\nO vetor precisa de realoca√ß√£o!");
 		vetor_dinamico = (int*)realloc(vetor_dinamico, (*quantidade_total_elementos * FATOR_REALLOC) * sizeof(int));
-		if (!vetor_dinamico) { //n„o conseguiu espaÁo em memÛria
+		if (!vetor_dinamico) { //n√£o conseguiu espa√ßo em mem√≥ria
 			return NULL;
 		}
 		*quantidade_total_elementos = *quantidade_total_elementos * FATOR_REALLOC;
@@ -63,8 +63,8 @@ void imprimir_vetor(int* vetor_estatico, int quantidade_total_elementos) {
 
 /*Objetivo: buscar um elemento no vetor
 entrada: vetor, a quantidade de elementos do vetor e o elemento a ser procurado
-saida: se encontrou o elemento, retornar o Ìndice onde o mesmo est· localizado.
-Caso contr·rio, retornar -1
+saida: se encontrou o elemento, retornar o √≠ndice onde o mesmo est√° localizado.
+Caso contr√°rio, retornar -1
 */
 int buscar_elemento(int* vetor, int quantidade_elementos, int elemento) {
 	int indice_procurado;
@@ -78,6 +78,18 @@ int buscar_elemento(int* vetor, int quantidade_elementos, int elemento) {
 	return NOT_FOUND;
 }
 
+int alterar_elemento(int* vetor, int quantidade_elementos, int elemento_original, int elemento_substituto) {
+	int indice;
+	int ultimo_indice_atualizado;
+	for (indice = 0; indice < quantidade_elementos; indice++) {
+		if (vetor[indice] == elemento_original) {
+			vetor[indice] = elemento_substituto;
+			ultimo_indice_atualizado = indice;			
+		}		 
+	}
+	return ultimo_indice_atualizado > NOT_FOUND ? ultimo_indice_atualizado : NOT_FOUND;
+}
+
 int exluir_elemento(int* vetor, int quantidade_elementos, int elemento) {
 	int indice;
 	int ultimo_indice_exluido;
@@ -85,11 +97,10 @@ int exluir_elemento(int* vetor, int quantidade_elementos, int elemento) {
 	for (indice = 0; indice < quantidade_elementos; indice++) {
 		if (vetor[indice] == elemento) {
 			vetor[indice] = ELEMENTO_EXCLUIDO;
-			ultimo_indice_exluido = indice;
-			return ultimo_indice_exluido;
+			ultimo_indice_exluido = indice;			
 		}
 	}
-	return NOT_FOUND;
+	return ultimo_indice_exluido > NOT_FOUND ? ultimo_indice_exluido : NOT_FOUND;
 }
 
 int buscar_maior_elemento(int* vetor, int quantidade_elementos) {
@@ -134,7 +145,7 @@ int findFirstVectorValidValue(int* vetor, int quantidade_elementos, int indice, 
 	return ++indice;
 };
 
-/*TERMINAR DE REFATORAR A VERS√O DO PROFESSOR ANDR…*/
+/*TERMINAR DE REFATORAR A VERS√ÉO DO PROFESSOR ANDR√â*/
 void bubble_sort(int* vetor, int quantidade_elementos) {
 	int i, j, aux;
 

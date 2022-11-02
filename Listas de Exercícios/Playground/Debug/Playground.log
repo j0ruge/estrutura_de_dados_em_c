@@ -1,7 +1,0 @@
-﻿  main.c
-I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Listas de Exercícios\Playground\main.c(19,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'int *'
-  tools.c
-I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Listas de Exercícios\Playground\tools.c(20,29): warning C4013: 'findFirstVectorExcludedValue' undefined; assuming extern returning int
-I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Listas de Exercícios\Playground\tools.c(88,11): warning C4013: 'findFirstVectorValidValue' undefined; assuming extern returning int
-  Generating Code...
-  Playground.vcxproj -> I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Listas de Exercícios\Lista 2\Debug\Playground.exe

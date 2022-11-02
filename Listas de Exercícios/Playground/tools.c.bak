@@ -9,19 +9,19 @@ int vetor_vazio(int* vetor) {
 int* incluir_valor(int* vetor_dinamico, int valor, int* quantidade_elementos, int* quantidade_total_elementos) {
 	if (vetor_vazio(vetor_dinamico)) //ou poderia ser if(qtd==0) ou if(!qtd)
 	{
-		printf("\nO vetor estava vazio - primeira aloca√ß√£o!");
+		printf("\nO vetor estava vazio - primeira alocaÁ„o!");
 		vetor_dinamico = (int*)malloc(FATOR_REALLOC * sizeof(int));
-		if (!vetor_dinamico) { //n√£o conseguiu espa√ßo em mem√≥ria
+		if (!vetor_dinamico) { //n„o conseguiu espaÁo em memÛria
 			return NULL;
 		}
 		*quantidade_total_elementos = 2;
 		*quantidade_elementos = 0;
 	}
 	int excluded_value_index = findFirstVectorExcludedValue(vetor_dinamico, *quantidade_elementos);
-	if (*quantidade_elementos == *quantidade_total_elementos && excluded_value_index == NOT_FOUND) { //meu vetor est√° cheio
-		printf("\nO vetor precisa de realoca√ß√£o!");
+	if (*quantidade_elementos == *quantidade_total_elementos && excluded_value_index == NOT_FOUND) { //meu vetor est· cheio
+		printf("\nO vetor precisa de realocaÁ„o!");
 		vetor_dinamico = (int*)realloc(vetor_dinamico, (*quantidade_total_elementos * FATOR_REALLOC) * sizeof(int));
-		if (!vetor_dinamico) { //n√£o conseguiu espa√ßo em mem√≥ria
+		if (!vetor_dinamico) { //n„o conseguiu espaÁo em memÛria
 			return NULL;
 		}
 		*quantidade_total_elementos = *quantidade_total_elementos * FATOR_REALLOC;
@@ -111,7 +111,7 @@ int findFirstVectorValidValue(int* vetor, int quantidade_elementos, int indice, 
 	return ++indice;
 };
 
-// Acess√≥rios
+// AcessÛrios
 void imprimir_vetor(int* vetor, int quantidade_total_elementos){
 	printf("\nTotal de elementos do vetor = %d", quantidade_total_elementos);
 	int indice;

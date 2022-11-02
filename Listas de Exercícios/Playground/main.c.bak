@@ -24,7 +24,7 @@ int main(int argc, char* argv[])
 {	
 	setlocale(LC_ALL, "Portuguese");
 
-	//VETOR DINÃ‚MICO
+	//VETOR DINÂMICO
 	int quantidade_elementos;
 	int quantidade_total_elementos;
 	int* vetor_dinamico = NULL;
@@ -42,7 +42,7 @@ int main(int argc, char* argv[])
 	exluir_elemento(vetor_dinamico, quantidade_elementos, 720);
 
 	//int result = binarySearch(vetor_primes_numbers, 100, 25);
-	//printf("\nO resultado da busca binÃ¡ria Ã©: %d\n", result);
+	//printf("\nO resultado da busca binária é: %d\n", result);
 
 	printf("\nDepois de excluir o elemento");
 
@@ -51,7 +51,7 @@ int main(int argc, char* argv[])
 	imprimir_vetor(vetor_dinamico, quantidade_elementos);
 
 	int menor = buscar_menor_elemento(vetor_dinamico, quantidade_total_elementos);
-	printf("\nO menor elemento Ã©: %d", menor);
+	printf("\nO menor elemento é: %d", menor);
 	alterar_elemento(vetor_dinamico, quantidade_elementos, 1880, 65234);
 	imprimir_vetor(vetor_dinamico, quantidade_elementos);
 	

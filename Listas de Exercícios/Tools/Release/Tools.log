@@ -1,4 +1,0 @@
-﻿  Generating code
-  Previous IOBJ not found, fall back to full compilation.
-i:\meu drive\pessoal\backup\pc_casa\documents\uva\estrutura de dados 1\estudos\aulas\aula 1_2- vetores din�micos\tools\data_structure_tools.c : fatal error C1083: Cannot open compiler intermediate file: 'Release\Data Structures Tools.ipdb': Permission denied
-LINK : fatal error LNK1257: code generation failed

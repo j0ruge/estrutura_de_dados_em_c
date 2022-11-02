@@ -3,6 +3,6 @@
 *.exe
 
 #Visual Studio Folders
-x64/
-Debug/
-Release/
+x64\
+Debug\
+Release\

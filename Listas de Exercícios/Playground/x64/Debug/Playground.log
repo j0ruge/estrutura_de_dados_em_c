@@ -1,4 +1,0 @@
-﻿  main.c
-I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Listas de Exercícios\Playground\main.c(23,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'int *'
-I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Listas de Exercícios\Playground\main.c(23,10): warning C4313: 'printf': '%d' in format string conflicts with argument 2 of type 'int *'
-  Playground.vcxproj -> I:\Meu Drive\Pessoal\Backup\pc_casa\Documents\UVA\Estrutura de Dados 1\Estudos\Listas de Exercícios\Lista 2\x64\Debug\Playground.exe
