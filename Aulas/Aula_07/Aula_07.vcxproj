@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{283A3D6E-5D22-45CC-BB99-36A3835A1EA3}</ProjectGuid>
-    <RootNamespace>Questão2</RootNamespace>
+    <ProjectGuid>{7a7a13b9-213a-4889-b7df-5a742b8a6036}</ProjectGuid>
+    <RootNamespace>Aula07</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Questão 2</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,13 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.c" />
-    <ClCompile Include="matriz_v1.c" />
-    <ClCompile Include="matriz_v2.c" />
-    <ClCompile Include="matriz_v3.c" />
+    <ClInclude Include="Ponto.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="matriz.h" />
+    <ClCompile Include="Ponto.c" />
+    <ClCompile Include="TADPontoUso.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
