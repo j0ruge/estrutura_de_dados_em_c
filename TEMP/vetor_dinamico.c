@@ -8,7 +8,7 @@
 
 #define FATOR_REALLOC 2
 
-/*OBJETIVO: Vetor Dinâmico*/
+/*OBJETIVO: Vetor Dinï¿½mico*/
 
 
 int vetor_vazio(int* vetor);
@@ -63,7 +63,7 @@ int main(int argc, char* argv[]) {
 			scanf_s("%d", &elemento);
 			int indice = buscar_elemento(vetor_dinamico, quantidade_elementos, elemento);
 			if (indice != NOT_FOUND) {
-				printf("Elemento encontrado na posicão %d", indice);
+				printf("Elemento encontrado na posicï¿½o %d", indice);
 			}
 			else {
 				printf("Elemento nao encontrado no vetor!");
@@ -104,18 +104,18 @@ int vetor_vazio(int* vetor) {
 int* incluir_valor(int* vetor_dinamico, int valor, int* quantidade_elementos, int* quantidade_total_elementos) {
 	if (vetor_vazio(vetor_dinamico)) //ou poderia ser if(qtd==0) ou if(!qtd)
 	{ 
-		printf("\nO vetor estava vazio - primeira alocação!");
+		printf("\nO vetor estava vazio - primeira alocaï¿½ï¿½o!");
 		vetor_dinamico = (int*)malloc(FATOR_REALLOC * sizeof(int));
-		if (!vetor_dinamico) { //não conseguiu espaço em memória
+		if (!vetor_dinamico) { //nï¿½o conseguiu espaï¿½o em memï¿½ria
 			return NULL;
 	}
 		*quantidade_total_elementos = 2;
 		*quantidade_elementos = 0;
 	}
-	if (*quantidade_elementos == *quantidade_total_elementos) { //meu vetor está cheio
-		printf("\nO vetor precisa de realocação!");
+	if (*quantidade_elementos == *quantidade_total_elementos) { //meu vetor estï¿½ cheio
+		printf("\nO vetor precisa de realocaï¿½ï¿½o!");
 		vetor_dinamico = (int*)realloc(vetor_dinamico, (*quantidade_total_elementos * FATOR_REALLOC) * sizeof(int));
-		if (!vetor_dinamico) { //não conseguiu espaço em memória
+		if (!vetor_dinamico) { //nï¿½o conseguiu espaï¿½o em memï¿½ria
 			return NULL;
 		}
 		*quantidade_total_elementos = *quantidade_total_elementos * 2;
