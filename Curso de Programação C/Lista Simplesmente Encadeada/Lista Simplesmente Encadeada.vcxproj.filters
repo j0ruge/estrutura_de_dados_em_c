@@ -18,5 +18,19 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lista_simplesmente_encadeada_ptr_ptr.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lista_simplesmente_encadeada_ptr_lista.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lista_simplesmente_encadeada_ptr_ptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lista_simplesmente_encadeada_ptr_lista.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
